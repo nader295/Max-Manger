@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-checklist-t ic-checklist-d">
+  <title id="ic-checklist-t">Requirements</title>
+  <desc id="ic-checklist-d">A clipboard with a tick: what the device must be.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <rect x="6" y="5.4" width="12" height="14.2" rx="2.4" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+  <rect x="9.4" y="4.2" width="5.2" height="2.8" rx="1.2" fill="#5FD9AC" stroke="#9BBACB" stroke-width="1"/>
+  <path d="M8.6 12.4 10.8 14.6 14.8 10.2" fill="none" stroke="#5FD9AC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.6 17h4.6" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

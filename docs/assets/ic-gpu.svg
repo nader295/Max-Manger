@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-gpu-t ic-gpu-d">
+  <title id="ic-gpu-t">GPU</title>
+  <desc id="ic-gpu-d">A graphics card with a fan: frequencies and vendor parameters.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <rect x="4.6" y="7.4" width="14.8" height="9.2" rx="2" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+  <circle cx="9.6" cy="12" r="2.8" fill="none" stroke="#5FD9AC" stroke-width="1.4"/>
+  <path d="M14.4 10.4h3M14.4 13.6h3" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

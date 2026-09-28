@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1160" width="720" height="1160" role="img" aria-labelledby="dl-t dl-d">
+  <title id="dl-t">The MaxManager design language: palette, type, spacing, radii and motion, taken from the app itself</title>
+  <desc id="dl-d">One accent that follows the user theme, three warning colours that never do, three typefaces with one job each, a single 4dp spacing scale, five meaningful corner radii, and a motion budget whose ceiling is 360 milliseconds. Every value shown is read from the app token layer.</desc>
+  <defs>
+    <linearGradient id="dl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDF2F6"/>
+    </linearGradient>
+    <linearGradient id="dl-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7FAFC"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="1160.0" rx="22" fill="url(#dl)" stroke="#D3DDE5" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#12212B" opacity="0.10"/>
+  <circle cx="620.0" cy="70.0" r="140.0" fill="#0E9E74" opacity="0.03">
+    <animate attributeName="opacity" values="0.03;0.07;0.03" keyTimes="0;0.5;1" dur="12.0s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="36.0" y="44.0" width="90" height="6" rx="3.0" fill="#0E9E74">
+    <animate attributeName="width" values="90;216;216;90" keyTimes="0;0.16;0.84;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#0E9E74;#0B7A59;#0E9E74" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="36.0" y="96.0" font-size="34" fill="#12212B" font-weight="800" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Design language</text>
+  <text x="36.0" y="132.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Drawn by rules, not taste — as the app's own tokens.</text>
+  <text x="36.0" y="188.0" font-size="21" fill="#4C6373" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">PALETTE — ONE ACCENT, THREE FIXED WARNINGS</text>
+  <rect x="36" y="206" width="88" height="88" rx="10" fill="#0E9E74"/>
+  <rect x="36" y="206" width="88" height="88" rx="10" fill="none" stroke="#12212B" stroke-width="1.5" stroke-dasharray="6 5" opacity="0.55"/>
+  <text x="36.0" y="322.0" font-size="21" fill="#12212B" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Accent</text>
+  <text x="36.0" y="350.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">your theme</text>
+  <rect x="204" y="206" width="88" height="88" rx="10" fill="#0B6B4F"/>
+  <text x="204.0" y="322.0" font-size="21" fill="#12212B" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Positive</text>
+  <text x="204.0" y="350.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">#0B6B4F</text>
+  <rect x="372" y="206" width="88" height="88" rx="10" fill="#8A5200"/>
+  <text x="372.0" y="322.0" font-size="21" fill="#12212B" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Caution</text>
+  <text x="372.0" y="350.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">#8A5200</text>
+  <rect x="540" y="206" width="88" height="88" rx="10" fill="#9A1B1B"/>
+  <text x="540.0" y="322.0" font-size="21" fill="#12212B" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Critical</text>
+  <text x="540.0" y="350.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">#9A1B1B</text>
+  <text x="36.0" y="390.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Contrast 10.2 · 10.5 · 8.8 on the dark surface,</text>
+  <text x="36.0" y="416.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">6.5 · 6.4 · 8.3 on light. Only the accent moves.</text>
+  <text x="36.0" y="462.0" font-size="21" fill="#4C6373" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">TYPE — THREE FACES, EACH WITH ONE JOB</text>
+  <text x="36.0" y="498.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Space Grotesk · display</text>
+  <text x="360.0" y="498.0" font-size="34" fill="#12212B" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Page title</text>
+  <text x="36.0" y="556.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Manrope · body and labels</text>
+  <text x="360.0" y="556.0" font-size="22" fill="#12212B" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Supporting copy</text>
+  <text x="36.0" y="614.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Mono · live values only</text>
+  <text x="360.0" y="614.0" font-size="30" fill="#0E9E74" font-weight="600" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">42.5 °C · 3.1 GHz</text>
+  <text x="36.0" y="660.0" font-size="21" fill="#4C6373" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">SPACE — ONE 4dp SCALE</text>
+  <rect x="36" y="692" width="12" height="8" rx="4" fill="#0E9E74" opacity="0.85"/>
+  <text x="36.0" y="726.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">4</text>
+  <rect x="64" y="692" width="24" height="8" rx="4" fill="#0E9E74" opacity="0.85"/>
+  <text x="64.0" y="726.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">8</text>
+  <rect x="104" y="692" width="36" height="8" rx="4" fill="#0E9E74" opacity="0.85"/>
+  <text x="104.0" y="726.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">12</text>
+  <rect x="156" y="692" width="48" height="8" rx="4" fill="#0E9E74" opacity="0.85"/>
+  <text x="156.0" y="726.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">16</text>
+  <rect x="220" y="692" width="60" height="8" rx="4" fill="#0E9E74" opacity="0.85"/>
+  <text x="220.0" y="726.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">20</text>
+  <rect x="296" y="692" width="84" height="8" rx="4" fill="#0E9E74" opacity="0.85"/>
+  <text x="296.0" y="726.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">28</text>
+  <text x="36.0" y="760.0" font-size="21" fill="#3C5A72" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">8 between rows · 20 as the page gutter · 28 between sections</text>
+  <text x="36.0" y="800.0" font-size="21" fill="#4C6373" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">RADII — A ROW, A CARD AND A SHEET DIFFER</text>
+  <rect x="36" y="832" width="60" height="60" rx="12" fill="url(#dl-card)" stroke="#D3DDE5" stroke-width="1.5"/>
+  <text x="66.0" y="924.0" font-size="21" fill="#4C6373" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">12</text>
+  <rect x="136" y="832" width="60" height="60" rx="14" fill="url(#dl-card)" stroke="#D3DDE5" stroke-width="1.5"/>
+  <text x="166.0" y="924.0" font-size="21" fill="#4C6373" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">14</text>
+  <rect x="236" y="832" width="60" height="60" rx="18" fill="url(#dl-card)" stroke="#D3DDE5" stroke-width="1.5"/>
+  <text x="266.0" y="924.0" font-size="21" fill="#4C6373" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">18</text>
+  <rect x="336" y="832" width="60" height="60" rx="22" fill="url(#dl-card)" stroke="#D3DDE5" stroke-width="1.5"/>
+  <text x="366.0" y="924.0" font-size="21" fill="#4C6373" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">22</text>
+  <rect x="436" y="832" width="60" height="60" rx="28" fill="url(#dl-card)" stroke="#D3DDE5" stroke-width="1.5"/>
+  <text x="466.0" y="924.0" font-size="21" fill="#4C6373" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">28</text>
+  <rect x="520" y="838" width="132" height="48" rx="24" fill="none" stroke="#0E9E74" stroke-width="1.5"/>
+  <text x="586.0" y="924.0" font-size="21" fill="#4C6373" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">status only</text>
+  <text x="36.0" y="964.0" font-size="21" fill="#4C6373" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">MOTION — AT MOST 360ms, AND NO LOOPS</text>
+  <rect x="36" y="996" width="54" height="10" rx="5" fill="#0E9E74" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.45;0.85" keyTimes="0;0.5;1" dur="4.5s" begin="0.00s" repeatCount="indefinite"/>
+  </rect>
+  <text x="36.0" y="1034.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">90</text>
+  <rect x="108" y="996" width="96" height="10" rx="5" fill="#0E9E74" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.45;0.85" keyTimes="0;0.5;1" dur="4.5s" begin="0.25s" repeatCount="indefinite"/>
+  </rect>
+  <text x="108.0" y="1034.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">160</text>
+  <rect x="222" y="996" width="144" height="10" rx="5" fill="#0E9E74" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.45;0.85" keyTimes="0;0.5;1" dur="4.5s" begin="0.50s" repeatCount="indefinite"/>
+  </rect>
+  <text x="222.0" y="1034.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">240</text>
+  <rect x="384" y="996" width="216" height="10" rx="5" fill="#0E9E74" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.45;0.85" keyTimes="0;0.5;1" dur="4.5s" begin="0.75s" repeatCount="indefinite"/>
+  </rect>
+  <text x="384.0" y="1034.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">360</text>
+  <text x="600.0" y="1034.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">ms</text>
+  <line x1="36" y1="1076" x2="684" y2="1076" stroke="#D3DDE5"/>
+  <text x="36.0" y="1110.0" font-size="21" fill="#3C5A72" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Every number is read from the app's own tokens.</text>
+  <text x="36.0" y="1136.0" font-size="21" fill="#4C6373" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">A gate fails when this picture and the code disagree.</text>
+</svg>

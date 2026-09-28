@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-phone-t ic-phone-d">
+  <title id="ic-phone-t">Screens</title>
+  <desc id="ic-phone-d">A phone with a lit screen.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <rect x="6.6" y="4.4" width="10.8" height="15.2" rx="2.4" fill="none" stroke="#9BBACB" stroke-width="1.5"/>
+  <rect x="8.4" y="7.4" width="7.2" height="8" rx="1.2" fill="#5FD9AC" stroke="#9BBACB" stroke-width="1"/>
+  <path d="M10.4 17.2h3.2" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

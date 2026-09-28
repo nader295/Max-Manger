@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-sliders-t ic-sliders-d">
+  <title id="ic-sliders-t">Controls</title>
+  <desc id="ic-sliders-d">Three faders: control you set yourself.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M5 7.8H19M5 12H19M5 16.2H19" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="9.8" cy="7.8" r="2" fill="#5FD9AC"/>
+  <circle cx="14.6" cy="12" r="2" fill="#5FD9AC"/>
+  <circle cx="8.4" cy="16.2" r="2" fill="#5FD9AC"/>
+</svg>

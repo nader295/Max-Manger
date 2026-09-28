@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280" role="img" aria-labelledby="bt bd">
+  <title id="bt">MaxManager — performance control that asks before it acts</title>
+  <desc id="bd">MaxManager, adaptive chip-aware performance control for rooted Android, with Max AI and Max Atlas, in 84 languages, and with no telemetry.</desc>
+  <defs>
+    <linearGradient id="bn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+  </defs>
+  <defs>
+    <clipPath id="bn-wipe">
+      <rect x="40" y="44" width="480" height="88">
+        <animate attributeName="width" values="0;480" keyTimes="0;1" dur="1.3s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <rect x="0.0" y="0.0" width="960.0" height="280.0" rx="22" fill="url(#bn)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="892.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="838.0" cy="58.0" r="150.0" fill="#5FD9AC" opacity="0.06">
+    <animate attributeName="opacity" values="0.06;0.13;0.06" keyTimes="0;0.5;1" dur="9.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="772.0" cy="238.0" r="112.0" fill="#9BBACB" opacity="0.05">
+    <animate attributeName="opacity" values="0.05;0.11;0.05" keyTimes="0;0.5;1" dur="11.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="880" cy="140" r="62" fill="none" stroke="#9BBACB" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="880" cy="140" r="46" fill="none" stroke="#243340" stroke-width="1.4"/>
+  <circle cx="880" cy="140" r="38" fill="#5FD9AC" opacity="0.08">
+    <animate attributeName="opacity" values="0.06;0.14;0.06" keyTimes="0;0.5;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M880 106 910 117v22c0 16-12 28-30 34-18-6-30-18-30-34v-22z" fill="none" stroke="#9BBACB" stroke-width="2.6" opacity="0.85"/>
+  <path d="M866 140 876 150 896 128" fill="none" stroke="#5FD9AC" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="48" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="48;0;0;48" keyTimes="0;0.14;0.86;1" dur="9.6s" begin="0.0s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="880.0" cy="78.0" r="5.5" fill="#5FD9AC" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0.55;0" keyTimes="0;0.90;0.94;0.97;1" dur="6.0s" repeatCount="indefinite"/>
+  </circle>
+  <g clip-path="url(#bn-wipe)">
+  <text x="40.0" y="112.0" font-size="60" fill="#E8F1F7" font-weight="800" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">MaxManager</text>
+  </g>
+  <rect x="40.0" y="130.0" width="96" height="6" rx="3.0" fill="#5FD9AC">
+    <animate attributeName="width" values="96;230;230;96" keyTimes="0;0.16;0.84;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#5FD9AC;#A8F0D6;#5FD9AC" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="40.0" y="190.0" font-size="31" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Performance control that asks before it acts.</text>
+  <text x="40.0" y="234.0" font-size="28" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Every switch you see works here — or it is not shown.</text>
+</svg>

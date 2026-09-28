@@ -1,0 +1,54 @@
+MaxManager — Proprietary License
+================================
+
+Copyright (C) 2026 Nader Magdy. All rights reserved.
+
+This repository and everything in it that is not listed in
+`THIRD_PARTY_NOTICES.md` (the "Software") is proprietary software owned by
+Nader Magdy (the "Copyright Holder").
+
+1. No License Granted
+   No right or license, express or implied, is granted to any person or entity
+   to use, copy, reproduce, modify, adapt, translate, publish, distribute,
+   sublicense, sell, rent, lease, or otherwise exploit the Software, in whole
+   or in part, by any means, without the prior written permission of the
+   Copyright Holder.
+
+2. No Derivative Works
+   Creating derivative works from the Software — including but not limited to
+   porting, re-implementing, extracting its data files, or reusing its
+   architectural designs — is prohibited without the prior written permission
+   of the Copyright Holder.
+
+3. No Warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL
+   THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF,
+   OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+4. Device Risk
+   Parts of this project modify kernel and system settings on rooted Android
+   devices. The Copyright Holder is not responsible for any damage to any
+   device, data loss, or loss of warranty resulting from its use.
+
+5. Third-Party Components
+   The Software includes, or is built against, components that are not owned by
+   the Copyright Holder. Those components remain under their own licenses and
+   are listed, with their notices and copyright lines, in
+   `THIRD_PARTY_NOTICES.md`. This license does not alter, restrict, or replace
+   those licenses, and nothing in this file grants rights to those components.
+
+6. Contributions
+   No contribution to this repository is accepted, and no contribution changes
+   the ownership of the Software, unless the Copyright Holder agrees otherwise
+   in writing.
+
+Contact
+-------
+Copyright Holder: Nader Magdy
+Repository:       MaxManager
+
+SPDX-License-Identifier: LicenseRef-MaxManager-Proprietary

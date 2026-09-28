@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-ai-t ic-ai-d">
+  <title id="ic-ai-t">Max AI</title>
+  <desc id="ic-ai-d">A four-point sparkle: the Max AI mark, the AI accent.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M12 4.2Q12.85 11.15 19.8 12Q12.85 12.85 12 19.8Q11.15 12.85 4.2 12Q11.15 11.15 12 4.2z" fill="#5FD9AC"/>
+</svg>

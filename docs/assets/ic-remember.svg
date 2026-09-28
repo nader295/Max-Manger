@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-remember-t ic-remember-d">
+  <title id="ic-remember-t">Remember</title>
+  <desc id="ic-remember-d">A bookmark: the outcome is kept.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M7.2 4.6h9.6v15l-4.8-4-4.8 4z" fill="none" stroke="#5FD9AC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

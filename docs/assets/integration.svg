@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 750" width="720" height="750" role="img" aria-labelledby="it id">
+  <title id="it">Integrating MaxManager into a ROM — three paths and the three names that must agree</title>
+  <desc id="id">Three integration paths: flash the systemless module in Magisk or KernelSU; build it into an AOSP tree from android/aosp with Soong files, an init service, a sepolicy domain and a privileged-permission allowlist; or use the KernelSU Next package in android/kernelsu. The binary path, the init service name and the SELinux labels must agree exactly: /system/bin/sys.maxmanager-service, service sys.maxmanager-service, u:r:maxmanager:s0 and u:object_r:maxmanager_exec:s0.</desc>
+  <defs>
+    <linearGradient id="it" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="it-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151F27"/>
+      <stop offset="1" stop-color="#0E1418"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="750.0" rx="22" fill="url(#it)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="34" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Three integration paths</text>
+  <text x="36.0" y="96.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">What must agree, and where the kit lives.</text>
+  <rect x="16" y="124.0" width="688" height="116" rx="18" fill="url(#it-card)" stroke="#243340" stroke-width="1.4"/>
+  <rect x="16" y="124.0" width="4" height="116" rx="2" fill="#5FD9AC" opacity="0.75">
+    <animate attributeName="opacity" values="0.75;0.30;0.75" keyTimes="0;0.5;1" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+  </rect>
+  <text x="40.0" y="166.0" font-size="24" fill="#5FD9AC" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Systemless module</text>
+  <text x="40.0" y="198.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Flash the zip in Magisk or KernelSU. Nothing in /system</text>
+  <text x="40.0" y="224.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">is modified permanently, and uninstall puts it back.</text>
+  <rect x="16" y="254.0" width="688" height="116" rx="18" fill="url(#it-card)" stroke="#243340" stroke-width="1.4"/>
+  <rect x="16" y="254.0" width="4" height="116" rx="2" fill="#5FD9AC" opacity="0.75">
+    <animate attributeName="opacity" values="0.75;0.30;0.75" keyTimes="0;0.5;1" dur="6s" begin="0.6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="40.0" y="296.0" font-size="24" fill="#5FD9AC" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">AOSP integration</text>
+  <text x="40.0" y="328.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">android/aosp/: Soong files, an init service, a sepolicy</text>
+  <text x="40.0" y="354.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">domain and a privileged-permission allowlist.</text>
+  <rect x="16" y="384.0" width="688" height="116" rx="18" fill="url(#it-card)" stroke="#243340" stroke-width="1.4"/>
+  <rect x="16" y="384.0" width="4" height="116" rx="2" fill="#5FD9AC" opacity="0.75">
+    <animate attributeName="opacity" values="0.75;0.30;0.75" keyTimes="0;0.5;1" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="40.0" y="426.0" font-size="24" fill="#5FD9AC" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">KernelSU Next</text>
+  <text x="40.0" y="458.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">android/kernelsu/: the same module packaged for</text>
+  <text x="40.0" y="484.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">KernelSU Next.</text>
+  <rect x="16" y="514.0" width="688" height="210" rx="18" fill="url(#it-card)" stroke="#5FD9AC" stroke-width="1.6"/>
+  <text x="40.0" y="558.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">The three names that must agree</text>
+  <text x="40.0" y="596.0" font-size="21" fill="#9BBACB" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">path     /system/bin/sys.maxmanager-service</text>
+  <text x="40.0" y="630.0" font-size="21" fill="#9BBACB" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">service  sys.maxmanager-service</text>
+  <text x="40.0" y="664.0" font-size="21" fill="#9BBACB" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">seclabel u:r:maxmanager:s0</text>
+  <text x="40.0" y="698.0" font-size="21" fill="#9BBACB" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">file     u:object_r:maxmanager_exec:s0</text>
+  <circle cx="688.0" cy="554.0" r="5.5" fill="#5FD9AC" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0.55;0" keyTimes="0;0.90;0.94;0.97;1" dur="7.0s" repeatCount="indefinite"/>
+  </circle>
+</svg>

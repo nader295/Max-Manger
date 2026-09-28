@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-doc-t ic-doc-d">
+  <title id="ic-doc-t">Documentation</title>
+  <desc id="ic-doc-d">A page with a folded corner: where the detail lives.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M6.4 4.4h7.2l4 4v11.2H6.4z" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.6 4.4v4.2h4.2" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.8 12h5.6M8.8 15.4h5.6" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

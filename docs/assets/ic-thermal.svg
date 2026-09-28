@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-thermal-t ic-thermal-d">
+  <title id="ic-thermal-t">Thermal</title>
+  <desc id="ic-thermal-d">A thermometer with heat marks: zones and policy.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <rect x="10.6" y="4.4" width="2.8" height="10.6" rx="1.4" fill="none" stroke="#5FD9AC" stroke-width="1.5"/>
+  <circle cx="12" cy="16.6" r="3.4" fill="#5FD9AC"/>
+  <path d="M16.4 8.4h3M16.4 12h2M16.4 15.6h3" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

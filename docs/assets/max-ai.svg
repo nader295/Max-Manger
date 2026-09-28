@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 660" width="720" height="660" role="img" aria-labelledby="mt md">
+  <title id="mt">Max AI — one measured change at a time</title>
+  <desc id="md">Five steps in order: Notice, Decide, Ask, Verify, Remember. Max AI changes one thing at a time, only when the readings say so, and it keeps a record of what the device actually did afterwards.</desc>
+  <defs>
+    <linearGradient id="ma" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="ma-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151F27"/>
+      <stop offset="1" stop-color="#0E1418"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="660.0" rx="22" fill="url(#ma)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="38" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Max AI</text>
+  <text x="36.0" y="96.0" font-size="22" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">One measured change at a time — never a stack of tweaks.</text>
+  <rect x="30.0" y="132.0" width="119.2" height="176" rx="16" fill="url(#ma-card)" stroke="#243340">
+    <animate attributeName="opacity" values="1;0.62;1" keyTimes="0;0.5;1" dur="7s" begin="0.0s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="89.6" cy="172.0" r="17" fill="#5FD9AC"/>
+  <text x="89.6" y="180.0" font-size="22" fill="#0E1418" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">1</text>
+  <text x="89.6" y="228.0" font-size="26" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Notice</text>
+  <text x="89.6" y="260.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">reads</text>
+  <text x="89.6" y="288.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">the device</text>
+  <path d="M151.2,172.0 L162.2,172.0 L157.2,166.0 Z" fill="#9BBACB"/>
+  <rect x="165.2" y="132.0" width="119.2" height="176" rx="16" fill="url(#ma-card)" stroke="#243340">
+    <animate attributeName="opacity" values="1;0.62;1" keyTimes="0;0.5;1" dur="7s" begin="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="224.8" cy="172.0" r="17" fill="#5FD9AC"/>
+  <text x="224.8" y="180.0" font-size="22" fill="#0E1418" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">2</text>
+  <text x="224.8" y="228.0" font-size="26" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Decide</text>
+  <text x="224.8" y="260.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">one</text>
+  <text x="224.8" y="288.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">change</text>
+  <path d="M286.4,172.0 L297.4,172.0 L292.4,166.0 Z" fill="#9BBACB"/>
+  <rect x="300.4" y="132.0" width="119.2" height="176" rx="16" fill="url(#ma-card)" stroke="#243340">
+    <animate attributeName="opacity" values="1;0.62;1" keyTimes="0;0.5;1" dur="7s" begin="1.6s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="360.0" cy="172.0" r="17" fill="#5FD9AC"/>
+  <text x="360.0" y="180.0" font-size="22" fill="#0E1418" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">3</text>
+  <text x="360.0" y="228.0" font-size="26" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Ask</text>
+  <text x="360.0" y="260.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">safety</text>
+  <text x="360.0" y="288.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">first</text>
+  <path d="M421.6,172.0 L432.6,172.0 L427.6,166.0 Z" fill="#9BBACB"/>
+  <rect x="435.6" y="132.0" width="119.2" height="176" rx="16" fill="url(#ma-card)" stroke="#243340">
+    <animate attributeName="opacity" values="1;0.62;1" keyTimes="0;0.5;1" dur="7s" begin="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="495.2" cy="172.0" r="17" fill="#5FD9AC"/>
+  <text x="495.2" y="180.0" font-size="22" fill="#0E1418" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">4</text>
+  <text x="495.2" y="228.0" font-size="26" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Verify</text>
+  <text x="495.2" y="260.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">read</text>
+  <text x="495.2" y="288.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">back</text>
+  <path d="M556.8,172.0 L567.8,172.0 L562.8,166.0 Z" fill="#9BBACB"/>
+  <rect x="570.8" y="132.0" width="119.2" height="176" rx="16" fill="url(#ma-card)" stroke="#243340">
+    <animate attributeName="opacity" values="1;0.62;1" keyTimes="0;0.5;1" dur="7s" begin="3.2s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="630.4" cy="172.0" r="17" fill="#5FD9AC"/>
+  <text x="630.4" y="180.0" font-size="22" fill="#0E1418" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">5</text>
+  <text x="630.4" y="228.0" font-size="26" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Remember</text>
+  <text x="630.4" y="260.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">trust</text>
+  <text x="630.4" y="288.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">earned</text>
+  <text x="36.0" y="352.0" font-size="26" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Why it is not a preset</text>
+  <text x="36.0" y="390.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">A preset applies the same numbers to every device.</text>
+  <text x="36.0" y="422.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Max AI asks what this device is doing now, changes one thing,</text>
+  <text x="36.0" y="454.0" font-size="21" fill="#5FD9AC" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">then measures whether it actually helped.</text>
+  <rect x="30" y="510.0" width="660" height="112" rx="14" fill="url(#ma-card)" stroke="#243340"/>
+  <text x="52.0" y="548.0" font-size="21" fill="#D99A6C" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">It will never</text>
+  <text x="52.0" y="582.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">write a protected interface · invent a reading</text>
+  <text x="52.0" y="612.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">claim a change it did not measure</text>
+</svg>

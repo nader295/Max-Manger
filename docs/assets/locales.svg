@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="lt ld">
+  <title id="lt">84 languages, and right-to-left is first class</title>
+  <desc id="ld">The interface ships in 84 languages plus English. Arabic, Farsi, Hebrew and Urdu are laid out right-to-left and checked on every run.</desc>
+  <defs>
+    <linearGradient id="lo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="300.0" rx="22" fill="url(#lo)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="38" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">84 languages</text>
+  <text x="36.0" y="96.0" font-size="22" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Arabic, Farsi, Hebrew and Urdu are laid out right-to-left.</text>
+  <text x="96.0" y="152.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+    English
+  </text>
+  <text x="228.0" y="152.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="0.3s" repeatCount="indefinite"/>
+    العربية
+  </text>
+  <text x="360.0" y="152.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="0.6s" repeatCount="indefinite"/>
+    简体中文
+  </text>
+  <text x="492.0" y="152.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="0.9s" repeatCount="indefinite"/>
+    Español
+  </text>
+  <text x="624.0" y="152.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+    Русский
+  </text>
+  <text x="96.0" y="214.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+    Français
+  </text>
+  <text x="228.0" y="214.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+    Português
+  </text>
+  <text x="360.0" y="214.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="2.1s" repeatCount="indefinite"/>
+    Türkçe
+  </text>
+  <text x="492.0" y="214.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="2.4s" repeatCount="indefinite"/>
+    Indonesia
+  </text>
+  <text x="624.0" y="214.0" font-size="22" fill="#9BBACB" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif" opacity="1">
+    <animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="6s" begin="2.7s" repeatCount="indefinite"/>
+    Deutsch
+  </text>
+  <text x="360.0" y="268.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">+ 75 more, and English is authored by hand</text>
+</svg>

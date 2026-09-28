@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-display-t ic-display-d">
+  <title id="ic-display-t">Display</title>
+  <desc id="ic-display-d">A lit screen on a stand: refresh, colour, brightness.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <rect x="4.6" y="5.4" width="14.8" height="10.2" rx="2" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+  <circle cx="12" cy="10.5" r="2.6" fill="#5FD9AC"/>
+  <path d="M12 15.6v2.4M8.8 18.8h6.4" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

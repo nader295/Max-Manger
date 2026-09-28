@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 690" width="720" height="690" role="img" aria-labelledby="at ac">
+  <title id="at">Max Atlas — the loop that learns how this device works</title>
+  <desc id="ac">Seven stages on a ring, clockwise from the top: Discover, Understand, Map, Adapt, Execute, Verify, Learn. The centre states the promise: what works on this device is proven here, not assumed. Nothing is claimed until it was read back.</desc>
+  <defs>
+    <linearGradient id="at" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="at-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151F27"/>
+      <stop offset="1" stop-color="#0E1418"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="690.0" rx="22" fill="url(#at)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="38" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Max Atlas</text>
+  <text x="36.0" y="96.0" font-size="22" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">It learns how your device works before changing anything.</text>
+  <circle cx="360.0" cy="350.0" r="196.0" fill="none" stroke="#243340" stroke-width="2"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(445.0,173.4) rotate(25.7)"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(551.1,306.4) rotate(77.1)"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(513.2,472.2) rotate(128.6)"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(360.0,546.0) rotate(180.0)"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(206.8,472.2) rotate(231.4)"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(168.9,306.4) rotate(282.9)"/>
+  <path d="M-4.8,-4.8 L6.6,0 L-4.8,4.8 Z" fill="#9BBACB" transform="translate(275.0,173.4) rotate(334.3)"/>
+  <circle cx="360.0" cy="154.0" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="360.0" cy="154.0" r="4.5" fill="#151C22"/>
+  <text x="360.0" y="123.0" font-size="22" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Discover</text>
+  <circle cx="513.2" cy="227.8" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="513.2" cy="227.8" r="4.5" fill="#151C22"/>
+  <text x="542.9" y="211.1" font-size="22" fill="#E8F1F7" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Understand</text>
+  <circle cx="551.1" cy="393.6" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="551.1" cy="393.6" r="4.5" fill="#151C22"/>
+  <text x="588.1" y="409.1" font-size="22" fill="#E8F1F7" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Map</text>
+  <circle cx="445.0" cy="526.6" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="445.0" cy="526.6" r="4.5" fill="#151C22"/>
+  <text x="461.5" y="567.8" font-size="22" fill="#E8F1F7" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Adapt</text>
+  <circle cx="275.0" cy="526.6" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="275.0" cy="526.6" r="4.5" fill="#151C22"/>
+  <text x="258.5" y="567.8" font-size="22" fill="#E8F1F7" text-anchor="end" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Execute</text>
+  <circle cx="168.9" cy="393.6" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="3.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="168.9" cy="393.6" r="4.5" fill="#151C22"/>
+  <text x="131.9" y="409.1" font-size="22" fill="#E8F1F7" text-anchor="end" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Verify</text>
+  <circle cx="206.8" cy="227.8" r="11" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="6s" begin="3.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="206.8" cy="227.8" r="4.5" fill="#151C22"/>
+  <text x="177.1" y="211.1" font-size="22" fill="#E8F1F7" text-anchor="end" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Learn</text>
+  <rect x="200.0" y="278.0" width="320" height="144" rx="18" fill="url(#at-card)" stroke="#243340"/>
+  <text x="360.0" y="324.0" font-size="26" fill="#E8F1F7" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">What works here</text>
+  <text x="360.0" y="358.0" font-size="26" fill="#5FD9AC" text-anchor="middle" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">is proven here.</text>
+  <text x="360.0" y="396.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">unproven stays unknown</text>
+  <line x1="36" y1="594" x2="684" y2="594" stroke="#243340"/>
+  <text x="36.0" y="628.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Atlas finds the path — and remembers it.</text>
+  <text x="36.0" y="658.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Max AI decides when to act. Neither crosses into the other.</text>
+</svg>

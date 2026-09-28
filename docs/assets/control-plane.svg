@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 510" width="720" height="510" role="img" aria-labelledby="ct cd">
+  <title id="ct">One write path</title>
+  <desc id="cd">Every change goes through one arbiter to a single root bridge, and the device is read back afterwards. A screen can never write to the kernel directly.</desc>
+  <defs>
+    <linearGradient id="cp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="cp-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151F27"/>
+      <stop offset="1" stop-color="#0E1418"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="510.0" rx="22" fill="url(#cp)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="38" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">One write path</text>
+  <text x="36.0" y="96.0" font-size="22" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Nothing touches the kernel behind your back.</text>
+  <rect x="30.0" y="132.0" width="156.0" height="116" rx="16" fill="url(#cp-card)" stroke="#243340"/>
+  <text x="108.0" y="182.0" font-size="22" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Your screen</text>
+  <text x="108.0" y="218.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">your tap</text>
+  <path d="M188.0,190.0 L200.0,190.0 L195.0,183.0 Z" fill="#9BBACB"/>
+  <rect x="204.0" y="132.0" width="156.0" height="116" rx="16" fill="url(#cp-card)" stroke="#243340"/>
+  <text x="282.0" y="182.0" font-size="22" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">One arbiter</text>
+  <text x="282.0" y="218.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">one owner</text>
+  <path d="M362.0,190.0 L374.0,190.0 L369.0,183.0 Z" fill="#9BBACB"/>
+  <rect x="378.0" y="132.0" width="156.0" height="116" rx="16" fill="url(#cp-card)" stroke="#243340"/>
+  <text x="456.0" y="182.0" font-size="22" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Root bridge</text>
+  <text x="456.0" y="218.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">the border</text>
+  <path d="M536.0,190.0 L548.0,190.0 L543.0,183.0 Z" fill="#9BBACB"/>
+  <rect x="552.0" y="132.0" width="156.0" height="116" rx="16" fill="url(#cp-card)" stroke="#243340"/>
+  <text x="630.0" y="182.0" font-size="22" fill="#E8F1F7" text-anchor="middle" font-weight="600" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Kernel</text>
+  <text x="630.0" y="218.0" font-size="21" fill="#93A9B8" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">answers</text>
+  <path d="M630.0,256.0 C630.0,284.0 108.0,284.0 108.0,256.0" fill="none" stroke="#5FD9AC" stroke-width="2" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" values="0;-24" keyTimes="0;1" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <text x="360.0" y="322.0" font-size="21" fill="#5FD9AC" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">then read back — a change that did not hold is not a success</text>
+  <rect x="30" y="362.0" width="660" height="112" rx="14" fill="url(#ma-card)" stroke="#243340"/>
+  <text x="52.0" y="400.0" font-size="21" fill="#D99A6C" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">There is no shortcut</text>
+  <text x="52.0" y="430.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">no screen can write to the kernel itself,</text>
+  <text x="52.0" y="458.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">and a test fails the build if one ever does</text>
+</svg>

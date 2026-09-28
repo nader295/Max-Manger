@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-battery-t ic-battery-d">
+  <title id="ic-battery-t">Power</title>
+  <desc id="ic-battery-d">A battery with a bolt: charging, bypass, battery health.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <rect x="4.6" y="8" width="13" height="8" rx="2.4" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+  <rect x="17.6" y="10.6" width="1.8" height="2.8" rx="0.9" fill="#9BBACB" stroke="#9BBACB" stroke-width="1"/>
+  <path d="M11.8 9.6 9.2 13h2.2l-0.6 2.6 2.8-3.6h-2.2z" fill="#5FD9AC"/>
+</svg>

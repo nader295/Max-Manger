@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-layers-t ic-layers-d">
+  <title id="ic-layers-t">Three layers</title>
+  <desc id="ic-layers-d">Three stacked layers: Max Atlas, the control plane, Max AI.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M12 4.5 19.4 8.4 12 12.3 4.6 8.4z" fill="#5FD9AC"/>
+  <path d="M4.6 12.9 12 16.6 19.4 12.9" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4.6 16.2 12 19.9 19.4 16.2" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

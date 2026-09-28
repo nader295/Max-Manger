@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-timer-t ic-timer-d">
+  <title id="ic-timer-t">Ten seconds</title>
+  <desc id="ic-timer-d">A bolt: the whole idea in ten seconds.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M13.6 4.4 7.2 13.3h3.7l-0.5 6.3 6.4-8.9h-3.7z" fill="#5FD9AC"/>
+</svg>

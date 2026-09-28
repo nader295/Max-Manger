@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 586" width="720" height="586" role="img" aria-labelledby="dt dd">
+  <title id="dt">What you can control — nine domains</title>
+  <desc id="dd">Nine control domains, each with the app's own one-line description: CPU cores and governors, GPU frequencies and policies, memory ZRAM and swappiness, display refresh and colour, responsiveness touch and frames, thermal heat and throttling, power charge and bypass, storage and compiler health, network scheduling and link state. A control the device does not expose is not shown.</desc>
+  <defs>
+    <linearGradient id="do" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="do-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151F27"/>
+      <stop offset="1" stop-color="#0E1418"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="586.0" rx="22" fill="url(#do)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="34" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">What you can control</text>
+  <text x="36.0" y="96.0" font-size="21" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Anything your device does not expose is simply not listed.</text>
+  <rect x="16.0" y="132.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(24.4,140.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="0.0s" repeatCount="indefinite"/>
+    <rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="#5FD9AC" stroke-width="1.6"/>
+    <rect x="10.2" y="10.2" width="3.6" height="3.6" rx="0.8" fill="#9BBACB" stroke="#9BBACB" stroke-width="1"/>
+    <path d="M9.4 7V4.4M14.6 7V4.4M9.4 17v2.6M14.6 17v2.6M7 9.4H4.4M7 14.6H4.4M17 9.4h2.6M17 14.6h2.6" fill="none" stroke="#9BBACB" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36.0" y="224.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">CPU</text>
+  <text x="36.0" y="252.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Cores · governors</text>
+  <rect x="251.0" y="132.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(259.4,140.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="0.4s" repeatCount="indefinite"/>
+    <rect x="4.6" y="7.4" width="14.8" height="9.2" rx="2" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+    <circle cx="9.6" cy="12" r="2.8" fill="none" stroke="#5FD9AC" stroke-width="1.4"/>
+    <path d="M14.4 10.4h3M14.4 13.6h3" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="271.0" y="224.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">GPU</text>
+  <text x="271.0" y="252.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Freqs · policies</text>
+  <rect x="486.0" y="132.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(494.4,140.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="0.8s" repeatCount="indefinite"/>
+    <rect x="4.6" y="8" width="14.8" height="8" rx="1.6" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+    <path d="M7.6 10.4v3.2M10.2 10.4v3.2M12.8 10.4v3.2M15.4 10.4v3.2" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 16v2.2M12 16v2.2M16 16v2.2" fill="none" stroke="#9BBACB" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="506.0" y="224.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Memory</text>
+  <text x="506.0" y="252.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">ZRAM · swappiness</text>
+  <rect x="16.0" y="278.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(24.4,286.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="1.2s" repeatCount="indefinite"/>
+    <rect x="4.6" y="5.4" width="14.8" height="10.2" rx="2" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+    <circle cx="12" cy="10.5" r="2.6" fill="#5FD9AC"/>
+    <path d="M12 15.6v2.4M8.8 18.8h6.4" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36.0" y="370.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Display</text>
+  <text x="36.0" y="398.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Refresh · colour</text>
+  <rect x="251.0" y="278.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(259.4,286.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="1.6s" repeatCount="indefinite"/>
+    <circle cx="12" cy="14" r="2.2" fill="#5FD9AC"/>
+    <path d="M8 11.4C9.4 9.6 14.6 9.6 16 11.4" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5.4 9.2C7.6 6.4 16.4 6.4 18.6 9.2" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7.4 18.4h9.2" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="271.0" y="370.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Responsiveness</text>
+  <text x="271.0" y="398.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Touch · frames</text>
+  <rect x="486.0" y="278.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(494.4,286.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="2.0s" repeatCount="indefinite"/>
+    <rect x="10.6" y="4.4" width="2.8" height="10.6" rx="1.4" fill="none" stroke="#5FD9AC" stroke-width="1.5"/>
+    <circle cx="12" cy="16.6" r="3.4" fill="#5FD9AC"/>
+    <path d="M16.4 8.4h3M16.4 12h2M16.4 15.6h3" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="506.0" y="370.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Thermal</text>
+  <text x="506.0" y="398.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Heat · throttling</text>
+  <rect x="16.0" y="424.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(24.4,432.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="2.4s" repeatCount="indefinite"/>
+    <rect x="4.6" y="8" width="13" height="8" rx="2.4" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+    <rect x="17.6" y="10.6" width="1.8" height="2.8" rx="0.9" fill="#9BBACB" stroke="#9BBACB" stroke-width="1"/>
+    <path d="M11.8 9.6 9.2 13h2.2l-0.6 2.6 2.8-3.6h-2.2z" fill="#5FD9AC"/>
+  </g>
+  <text x="36.0" y="516.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Power</text>
+  <text x="36.0" y="544.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Charge · bypass</text>
+  <rect x="251.0" y="424.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(259.4,432.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="2.8s" repeatCount="indefinite"/>
+    <rect x="4.8" y="6.4" width="14.4" height="11.2" rx="2.4" fill="none" stroke="#9BBACB" stroke-width="1.4"/>
+    <path d="M4.8 12.8h14.4" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 15.4h5" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16.4" cy="15.4" r="1.1" fill="#5FD9AC"/>
+  </g>
+  <text x="271.0" y="516.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Storage</text>
+  <text x="271.0" y="544.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Compiler · health</text>
+  <rect x="486.0" y="424.0" width="218.0" height="132" rx="18" fill="url(#do-card)" stroke="#243340" stroke-width="1.4"/>
+  <g transform="translate(494.4,432.4) scale(1.4)" opacity="1">
+    <animate attributeName="opacity" values="1;0.55;1" keyTimes="0;0.5;1" dur="7s" begin="3.2s" repeatCount="indefinite"/>
+    <path d="M6.6 17.4 12 6.6M17.4 17.4 12 6.6M6.6 17.4h10.8" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="6.6" r="2.4" fill="#5FD9AC"/>
+    <circle cx="6.6" cy="17.4" r="1.9" fill="#5FD9AC"/>
+    <circle cx="17.4" cy="17.4" r="1.9" fill="#5FD9AC"/>
+  </g>
+  <text x="506.0" y="516.0" font-size="24" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Network</text>
+  <text x="506.0" y="544.0" font-size="21" fill="#9BBACB" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Link · scheduling</text>
+</svg>

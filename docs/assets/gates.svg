@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 594" width="720" height="594" role="img" aria-labelledby="gt gd">
+  <title id="gt">16 checks before the compiler runs</title>
+  <desc id="gd">A grid of the 16 checks that run in seconds, before any heavy build step, so a mistake is named early instead of after minutes of compiling.</desc>
+  <defs>
+    <linearGradient id="gt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B242C"/>
+      <stop offset="1" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="gt-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151F27"/>
+      <stop offset="1" stop-color="#0E1418"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.0" y="0.0" width="720.0" height="594.0" rx="22" fill="url(#gt)" stroke="#243340" stroke-width="1.5"/>
+  <rect x="34.0" y="6.0" width="652.0" height="1.4" rx="0.7" fill="#E8F1F7" opacity="0.10"/>
+  <circle cx="614.0" cy="74.0" r="152.0" fill="#5FD9AC" opacity="0.04">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" keyTimes="0;0.5;1" dur="10.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36.0" y="62.0" font-size="38" fill="#E8F1F7" font-weight="700" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">Checked before it is built</text>
+  <text x="36.0" y="96.0" font-size="22" fill="#93A9B8" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">16 checks run in seconds, ahead of every build.</text>
+  <rect x="30.0" y="132.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="58.0" cy="163.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="0.00s" repeatCount="indefinite"/>
+  </circle>
+  <text x="78.0" y="170.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">balanced code</text>
+  <rect x="254.0" y="132.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="282.0" cy="163.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="0.35s" repeatCount="indefinite"/>
+  </circle>
+  <text x="302.0" y="170.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">clean tree</text>
+  <rect x="478.0" y="132.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="506.0" cy="163.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="0.70s" repeatCount="indefinite"/>
+  </circle>
+  <text x="526.0" y="170.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">translations</text>
+  <rect x="30.0" y="206.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="58.0" cy="237.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="1.05s" repeatCount="indefinite"/>
+  </circle>
+  <text x="78.0" y="244.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">orphan keys</text>
+  <rect x="254.0" y="206.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="282.0" cy="237.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="1.40s" repeatCount="indefinite"/>
+  </circle>
+  <text x="302.0" y="244.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">JNI contract</text>
+  <rect x="478.0" y="206.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="506.0" cy="237.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="1.75s" repeatCount="indefinite"/>
+  </circle>
+  <text x="526.0" y="244.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">unused modules</text>
+  <rect x="30.0" y="280.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="58.0" cy="311.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="2.10s" repeatCount="indefinite"/>
+  </circle>
+  <text x="78.0" y="318.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">design tokens</text>
+  <rect x="254.0" y="280.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="282.0" cy="311.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="2.45s" repeatCount="indefinite"/>
+  </circle>
+  <text x="302.0" y="318.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">packaging</text>
+  <rect x="478.0" y="280.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="506.0" cy="311.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="2.80s" repeatCount="indefinite"/>
+  </circle>
+  <text x="526.0" y="318.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">resources</text>
+  <rect x="30.0" y="354.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="58.0" cy="385.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="3.15s" repeatCount="indefinite"/>
+  </circle>
+  <text x="78.0" y="392.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">RTL layout</text>
+  <rect x="254.0" y="354.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="282.0" cy="385.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="3.50s" repeatCount="indefinite"/>
+  </circle>
+  <text x="302.0" y="392.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">licences</text>
+  <rect x="478.0" y="354.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="506.0" cy="385.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="3.85s" repeatCount="indefinite"/>
+  </circle>
+  <text x="526.0" y="392.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">file manifest</text>
+  <rect x="30.0" y="428.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="58.0" cy="459.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="4.20s" repeatCount="indefinite"/>
+  </circle>
+  <text x="78.0" y="466.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">links resolve</text>
+  <rect x="254.0" y="428.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="282.0" cy="459.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="4.55s" repeatCount="indefinite"/>
+  </circle>
+  <text x="302.0" y="466.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">readable assets</text>
+  <rect x="478.0" y="428.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="506.0" cy="459.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="4.90s" repeatCount="indefinite"/>
+  </circle>
+  <text x="526.0" y="466.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">screenshots</text>
+  <rect x="30.0" y="502.0" width="212.0" height="62" rx="12" fill="url(#gt-card)" stroke="#243340"/>
+  <circle cx="58.0" cy="533.0" r="7" fill="#5FD9AC">
+    <animate attributeName="opacity" values="1;0.45;1" keyTimes="0;0.5;1" dur="6s" begin="5.25s" repeatCount="indefinite"/>
+  </circle>
+  <text x="78.0" y="540.0" font-size="21" fill="#E8F1F7" font-family="-apple-system, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif">mark geometry</text>
+</svg>

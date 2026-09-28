@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-seal-t ic-seal-d">
+  <title id="ic-seal-t">Licence</title>
+  <desc id="ic-seal-d">A seal on a ribbon: proprietary, stated plainly.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <circle cx="12" cy="9.6" r="5.4" fill="none" stroke="#9BBACB" stroke-width="1.5"/>
+  <path d="M9.8 9.8 11.4 11.4 14.4 8.2" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9 14.4 8 20 12 18 16 20 15 14.4" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
