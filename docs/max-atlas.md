@@ -28,7 +28,9 @@ diagnostic and a guess.
 **2. Absence must be proved.** A failed read is not an absence. Only a *successful listing* that does
 not contain a name proves that the name is not there — everything else stays `UNKNOWN`
 (`AtlasDiscovery.childrenOf`). This is why the app can tell you "your device does not have this" with a
-straight face: something had to prove it.
+straight face: something had to prove it. The mirror case is just as important: a node that *was* listed
+but could not be read is **not** an absence either — it is a measurement gap with its own name, because a
+blocked parent-directory traversal looks exactly like an unsupported feature.
 
 **3. Unknown stays unknown.** The capability map is a *derivation*, never a measurement — every input
 comes from something that already established it. `UNKNOWN` is the honest default, and it is
@@ -72,6 +74,40 @@ settled". Everything else is recorded in its real state — `FAILED_ROLLED_BACK`
 - **`AtlasFailureLedger`** — negative evidence with its own lifetime: a read that failed is a fact, and
   some failures are permanent for the process or the boot while others deserve a retry.
 - **`AtlasRouteMemory`** — per-device route outcomes: what worked here, and what did not.
+- **`HardwareDeviceOverlay`** — the **third line, and the only one the owner writes**. A `devfreq` node
+  that answers with a frequency ladder but that no reviewed rule classifies is *listed as unnamed*
+  instead of dropped, and the owner names its kind once (`memory` / `storage`). The overlay is a plain
+  text file in the app's own directory, so it can be copied to another device or sent with a report.
+  Three rules keep it honest: a built-in rule always wins, graphics names are refused (a knob may not
+  have two owners), and a name is stored **only after** the node was read back as a real frequency
+  interface (`MemoryUfsHardwareBackend.probe`). A bad line is refused with its reason and never drops
+  the rest of the file.
+
+## Memory and storage frequencies — a second surface Atlas owns
+
+`MemoryUfsHardwareBackend` is the single owner of the non-graphics `devfreq` nodes. It enumerates
+`/sys/class/devfreq` and classifies each node from **observed vocabulary** (`dvfsrc`, `cpubw`, `memlat`,
+`mif`, `ufshci`, …) rather than from a per-device path table — a path such as
+`/sys/devices/platform/soc/112b0000.ufshci/devfreq/112b0000.ufshci` is an address on *one* SoC and an
+absent node on the next kernel. Then it proves the unit from the node's own ladder, and reads the range
+back after every write.
+
+The screen writes `min_freq` / `max_freq` only, through the arbiter and with canonical keys
+(`mem_frequency:<device>`, `ufs_frequency:<device>`), so no knob ever has two writers. Its profiles are
+fractions of `configurableMaxFreq` — the ceiling the driver publishes *now*, not the catalog — because a
+vendor thermal cap makes a catalog number impossible and it would then be recorded as a failure. Nothing
+is invented: a one-step ladder is not a range, an unproven unit is read-only, and the memory-stall advice
+(`full avg10 ≥ 10%` from PSI) is **offered**, never applied on its own.
+
+When no rule names a node, the map says `unclassified-devfreq-node-seen` rather than "nothing
+observed" — the node *was* observed, its kind is what is missing, and naming it is one tap in
+*Memory & UFS*, not an update.
+
+A node that was listed but answered nothing is a different gap with a different action:
+`devfreq-node-unreadable`. It is shown under *listed but unread* with no teaching buttons, because
+nothing about it was measured to teach. The same split exists at the class root: `/sys/class/devfreq`
+missing is a **measured** absence (`devfreq-root-absent` — the kernel publishes no devfreq class), while
+a root that exists and cannot be listed stays `devfreq-root-unreadable` and never claims absence.
 
 ## Proving it without a device
 

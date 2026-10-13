@@ -1,6 +1,6 @@
 # Features
 
-MaxManager's surface is 53 screens across nine control domains, plus a small set of tools. This page
+MaxManager's surface is 61 screens across ten control domains, plus a small set of tools. This page
 explains what each part is *for* — not just that it exists.
 
 A rule that shapes everything below: **a control that your device does not expose is not shown as a
@@ -63,6 +63,13 @@ batches, not by shelling out per directory.
 ### Network — *"Traffic scheduling and link state"*
 
 Network detail (what the link is doing right now) and the scheduler controls.
+
+### Audio — *"Output devices, streams and declared effects"*
+
+Read-only today, and deliberately so: the hub reports what the platform declares for the primary
+output (sample rate, frames per buffer), every endpoint the device announces — outputs first, then
+inputs — and the effects the audio engine reports. An empty list is a reading (*"no effects"* — the
+device announced none), while an unreadable one is reported as unreadable rather than as zero.
 
 ---
 

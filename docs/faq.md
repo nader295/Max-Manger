@@ -80,7 +80,7 @@ build, the SELinux policy and the privileged permission allowlist. **But MaxMana
 software**: integration is with the copyright holder's written permission, and
 [LICENSE](../LICENSE) grants no right otherwise. Ask first — the contact is in
 [Support](../README.md#support). The technical path is in [rom-integration.md](rom-integration.md),
-including two mismatches we found in our own kit and did not paper over.
+including the mismatches we found in our own kit and did not paper over.
 
 ### Why is the licence proprietary if the repo is public?
 

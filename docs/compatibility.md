@@ -43,7 +43,7 @@ your device does not expose never appears as a switch that does nothing.
   you did not ask for.
 - **Thermal trip points are never written**, on any device. That is a rule, not a device limitation.
 - **The AOSP integration kit is a reviewed starting point, not a validated policy** for your tree — see
-  [rom-integration.md](rom-integration.md), including two mismatches we found and reported there.
+  [rom-integration.md](rom-integration.md), including the mismatches we found and reported there.
 - **No performance promises.** We do not publish benchmark deltas, because a number measured on one
   device with one workload is not a claim about yours. What is measured here is stated as measured,
   and everything else is written as what it is.
