@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nader295/Max-Manger/releases/latest"><img alt="التنزيل" src="https://img.shields.io/badge/download-latest_release-2ea44f?style=for-the-badge"></a>
+  <a href="https://github.com/catui0041-alt/Gg/actions/workflows/build.yml"><img alt="البناء" src="https://github.com/catui0041-alt/Gg/actions/workflows/build.yml/badge.svg?v=2"></a>
   <img alt="أندرويد" src="https://img.shields.io/badge/Android-10%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white">
   <img alt="جذر" src="https://img.shields.io/badge/root-required-607D8F?style=for-the-badge">
   <img alt="لغات" src="https://img.shields.io/badge/languages-84%2B-607D8F?style=for-the-badge">
@@ -28,15 +28,11 @@
   <a href="docs/README.md"><b>اقرأ الوثائق</b></a>
 </p>
 
-<p align="center"><b>هذا المستودع هو الوجه العام لـMaxManager</b> — الوثائق واللقطات والتنزيلات.
-والتطبيق وطبقته الأصلية <b>مصدر مغلق</b>: لا شيء هنا يُبنى، وسطور الأوامر المنقولة في هذه
-الصفحات تُشغَّل داخل ذلك المستودع.</p>
-
 | | |
 | --- | --- |
 | **المنصّة** | أندرويد 10 أو أحدث (API 29) · `arm64-v8a` و`armeabi-v7a` |
 | **الجذر** | Magisk · KernelSU · KernelSU Next — أو Shizuku لجزء منه |
-| **الشاشات** | ٥٣ شاشة في تسعة مجالات ضبط، ومعها رفّ أدوات |
+| **الشاشات** | ٦١ شاشة في عشرة مجالات ضبط، ومعها رفّ أدوات |
 | **اللغات** | ٨٤ لغة زائد الإنجليزيّة، والاتجاه من اليمين مفروض ببوابة |
 | **الرخصة** | مملوكة — ولا تُستعمل إلا بإذن كتابيّ من صاحب الحقّ |
 
@@ -54,7 +50,7 @@
 | ٣ | [لماذا بُني هكذا](#لماذا-هكذا) | الطبقات الثلاث ومسار الكتابة الواحد |
 | ٤ | [Max Atlas](#max-atlas) | لماذا يعمل أيّ شيء على هاتفك أنت |
 | ٥ | [Max AI](#max-ai) | ما الذي يتغيّر، وكيف يُقاس |
-| ٦ | [ما تتحكم فيه](#ما-تتحكم-فيه) | المجالات التسعة، والتحكّم لكلّ تطبيق، والملفّات |
+| ٦ | [ما تتحكم فيه](#ما-تتحكم-فيه) | المجالات العشرة، والتحكّم لكلّ تطبيق، والملفّات |
 | ٧ | [المراقبة والقياس والتشخيص](#المراقبة) | القراءات الحيّة، والطبقات، والسجلات، والتشخيص |
 | ٨ | [اللغات](#اللغات) | ٨٤ لغة، والاتجاه من اليمين مفروض ببوابة |
 | ٩ | [المتطلبات](#المتطلبات) | هل يعمل على هاتفي؟ |
@@ -65,7 +61,7 @@
 | ١٤ | [الأسئلة الشائعة](#الأسئلة) | الأسئلة التي تتكرّر |
 | ١٥ | [الدعم](#الدعم) | إلى أين يذهب البلاغ |
 | ١٦ | [الرخصة](#الرخصة) | مملوكة، ومكتوبة صراحةً |
-| ١٧ | [Credits](#credits) | مَن كتب ما لم يكتبه هذا المشروع |
+| ١٧ | [الفضل](#credits) | مَن كتب ما لم يكتبه هذا المشروع |
 
 </details>
 
@@ -92,8 +88,8 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 
 | **أريد استعماله** | **أبني رومات** |
 | --- | --- |
-| [كيف يبدو](#كيف-تبدو) · [ما تتحكم فيه](#ما-تتحكم-فيه) · [التثبيت](#التثبيت) | [لمطوّري الروم](#لمطوّري-الروم) — عدّة الدمج، عند الطلب |
-| ٥٣ شاشة في تسعة مجالات ضبط، وأدوات مساعدة | ملفّات Soong وخدمة init ونطاق sepolicy وقائمة صلاحيات مُمتَزَجة |
+| [كيف يبدو](#كيف-تبدو) · [ما تتحكم فيه](#ما-تتحكم-فيه) · [التثبيت](#التثبيت) | [لمطوّري الروم](#لمطوّري-الروم) — عدّة الدمج في `android/aosp/` |
+| ٦١ شاشة في عشرة مجالات ضبط، وأدوات مساعدة | ملفّات Soong وخدمة init ونطاق sepolicy وقائمة صلاحيات مُمتَزَجة |
 | [المتطلبات](#المتطلبات): أندرويد 10+ وجذر (أو Shizuku لجزء منها) | الإذن أولًا: برمجيات مملوكة، والدمج بإذن كتابي |
 
 <p align="right"><sub><a href="#top">↑ أعلى الصفحة</a></sub></p>
@@ -107,7 +103,7 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 
 <!-- screenshots:start -->
 <details open>
-<summary><b>الرئيسية و Max AI</b> · ٦ إطارات</summary>
+<summary><b>الرئيسية و Max AI</b> · ٧ إطارات</summary>
 
 <table>
   <tr>
@@ -119,7 +115,7 @@ MaxManager مبنيّ بالاتجاه المعاكس.
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/05-max-ai-live.png"><img src="docs/screenshots/05-max-ai-live.png" width="140" alt="MaxManager — التحكّم الحيّ"></a><br><sub><b>التحكّم الحيّ</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/06-max-ai-loops.png"><img src="docs/screenshots/06-max-ai-loops.png" width="140" alt="MaxManager — حصيلة الحلقات"></a><br><sub><b>حصيلة الحلقات</b></sub></td>
-    <td align="center" width="25%"></td>
+    <td align="center" width="25%"><a href="docs/screenshots/49-home-tour.png"><img src="docs/screenshots/49-home-tour.png" width="140" alt="MaxManager — جولة الرئيسية"></a><br><sub><b>جولة الرئيسية</b></sub></td>
     <td align="center" width="25%"></td>
   </tr>
 </table>
@@ -127,7 +123,7 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 </details>
 
 <details open>
-<summary><b>التحكّم لكل تطبيق</b> · ٦ إطارات</summary>
+<summary><b>التحكّم لكل تطبيق</b> · ٧ إطارات</summary>
 
 <table>
   <tr>
@@ -139,15 +135,28 @@ MaxManager مبنيّ بالاتجاه المعاكس.
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/30-app-settings-power.png"><img src="docs/screenshots/30-app-settings-power.png" width="140" alt="MaxManager — لكل تطبيق · الطاقة"></a><br><sub><b>لكل تطبيق · الطاقة</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/31-app-settings-tune.png"><img src="docs/screenshots/31-app-settings-tune.png" width="140" alt="MaxManager — لكل تطبيق · ضبط"></a><br><sub><b>لكل تطبيق · ضبط</b></sub></td>
-    <td align="center" width="25%"></td>
+    <td align="center" width="25%"><a href="docs/screenshots/50-app-spoof.png"><img src="docs/screenshots/50-app-spoof.png" width="140" alt="MaxManager — انتحال الجهاز"></a><br><sub><b>انتحال الجهاز</b></sub></td>
     <td align="center" width="25%"></td>
   </tr>
 </table>
 
 </details>
 
+<details open>
+<summary><b>مساحة الألعاب</b> · ٣ إطارات</summary>
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="docs/screenshots/70-game-lobby.png"><img src="docs/screenshots/70-game-lobby.png" width="260" alt="MaxManager — لوبي الألعاب"></a><br><sub><b>لوبي الألعاب</b></sub></td>
+    <td align="center" width="33%"><a href="docs/screenshots/71-game-launch.png"><img src="docs/screenshots/71-game-launch.png" width="260" alt="MaxManager — بدء التشغيل"></a><br><sub><b>بدء التشغيل</b></sub></td>
+    <td align="center" width="33%"><a href="docs/screenshots/72-game-panel.png"><img src="docs/screenshots/72-game-panel.png" width="260" alt="MaxManager — اللوحة الجانبية"></a><br><sub><b>اللوحة الجانبية</b></sub></td>
+  </tr>
+</table>
+
+</details>
+
 <details>
-<summary><b>مجالات التحكّم</b> · ٨ إطارات</summary>
+<summary><b>مجالات التحكّم</b> · ١٠ إطارات</summary>
 
 <table>
   <tr>
@@ -160,14 +169,20 @@ MaxManager مبنيّ بالاتجاه المعاكس.
     <td align="center" width="25%"><a href="docs/screenshots/11-control-hub-2.png"><img src="docs/screenshots/11-control-hub-2.png" width="140" alt="MaxManager — التحكّم (٢)"></a><br><sub><b>التحكّم (٢)</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/12-hub-display.png"><img src="docs/screenshots/12-hub-display.png" width="140" alt="MaxManager — العرض"></a><br><sub><b>العرض</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/13-hub-responsiveness.png"><img src="docs/screenshots/13-hub-responsiveness.png" width="140" alt="MaxManager — الاستجابة"></a><br><sub><b>الاستجابة</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/14-hub-power.png"><img src="docs/screenshots/14-hub-power.png" width="140" alt="MaxManager — الطاقة"></a><br><sub><b>الطاقة</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/51-cpu-hub.png"><img src="docs/screenshots/51-cpu-hub.png" width="140" alt="MaxManager — مجال المعالج"></a><br><sub><b>مجال المعالج</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/52-memory-hub.png"><img src="docs/screenshots/52-memory-hub.png" width="140" alt="MaxManager — مجال الذاكرة"></a><br><sub><b>مجال الذاكرة</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/53-storage-hub.png"><img src="docs/screenshots/53-storage-hub.png" width="140" alt="MaxManager — مجال التخزين"></a><br><sub><b>مجال التخزين</b></sub></td>
+    <td align="center" width="25%"></td>
+    <td align="center" width="25%"></td>
   </tr>
 </table>
 
 </details>
 
 <details>
-<summary><b>المعالج والرسوميات</b> · ٥ إطارات</summary>
+<summary><b>المعالج والرسوميات</b> · ٦ إطارات</summary>
 
 <table>
   <tr>
@@ -178,7 +193,7 @@ MaxManager مبنيّ بالاتجاه المعاكس.
   </tr>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/19-gpu-studio-live.png"><img src="docs/screenshots/19-gpu-studio-live.png" width="140" alt="MaxManager — الرسوميات الحيّ"></a><br><sub><b>الرسوميات الحيّ</b></sub></td>
-    <td align="center" width="25%"></td>
+    <td align="center" width="25%"><a href="docs/screenshots/54-thermal.png"><img src="docs/screenshots/54-thermal.png" width="140" alt="MaxManager — الحرارة"></a><br><sub><b>الحرارة</b></sub></td>
     <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
@@ -187,12 +202,18 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 </details>
 
 <details>
-<summary><b>الذاكرة والعرض</b> · إطاران</summary>
+<summary><b>الذاكرة والعرض</b> · ٥ إطارات</summary>
 
 <table>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/20-memory-zram.png"><img src="docs/screenshots/20-memory-zram.png" width="140" alt="MaxManager — مدير ZRAM"></a><br><sub><b>مدير ZRAM</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/21-display-resolution.png"><img src="docs/screenshots/21-display-resolution.png" width="140" alt="MaxManager — الدقّة"></a><br><sub><b>الدقّة</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/55-memory-ufs.png"><img src="docs/screenshots/55-memory-ufs.png" width="140" alt="MaxManager — الذاكرة و UFS"></a><br><sub><b>الذاكرة و UFS</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/56-zram-custom.png"><img src="docs/screenshots/56-zram-custom.png" width="140" alt="MaxManager — حجم ZRAM"></a><br><sub><b>حجم ZRAM</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/57-canvas-custom.png"><img src="docs/screenshots/57-canvas-custom.png" width="140" alt="MaxManager — مقاس مخصّص"></a><br><sub><b>مقاس مخصّص</b></sub></td>
+    <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
@@ -215,7 +236,7 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 </details>
 
 <details>
-<summary><b>الإعدادات والأدوات</b> · ١١ إطارًا</summary>
+<summary><b>الإعدادات والأدوات</b> · ١٣ إطارًا</summary>
 
 <table>
   <tr>
@@ -226,14 +247,20 @@ MaxManager مبنيّ بالاتجاه المعاكس.
   </tr>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/36-backup-plan.png"><img src="docs/screenshots/36-backup-plan.png" width="140" alt="MaxManager — خطة النسخ"></a><br><sub><b>خطة النسخ</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/37-backup-apps.png"><img src="docs/screenshots/37-backup-apps.png" width="140" alt="MaxManager — تطبيقات النسخ"></a><br><sub><b>تطبيقات النسخ</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/38-permissions.png"><img src="docs/screenshots/38-permissions.png" width="140" alt="MaxManager — الأذونات"></a><br><sub><b>الأذونات</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/39-permissions-app.png"><img src="docs/screenshots/39-permissions-app.png" width="140" alt="MaxManager — أذونات تطبيق"></a><br><sub><b>أذونات تطبيق</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center" width="25%"><a href="docs/screenshots/40-permissions-2.png"><img src="docs/screenshots/40-permissions-2.png" width="140" alt="MaxManager — الأذونات (٢)"></a><br><sub><b>الأذونات (٢)</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/41-activity-launcher.png"><img src="docs/screenshots/41-activity-launcher.png" width="140" alt="MaxManager — الأنشطة"></a><br><sub><b>الأنشطة</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/42-set-edit.png"><img src="docs/screenshots/42-set-edit.png" width="140" alt="MaxManager — محرّر الخصائص"></a><br><sub><b>محرّر الخصائص</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/58-backup-scope.png"><img src="docs/screenshots/58-backup-scope.png" width="140" alt="MaxManager — ما يُنسخ"></a><br><sub><b>ما يُنسخ</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/59-settings-about.png"><img src="docs/screenshots/59-settings-about.png" width="140" alt="MaxManager — حول التطبيق"></a><br><sub><b>حول التطبيق</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/60-settings-advanced.png"><img src="docs/screenshots/60-settings-advanced.png" width="140" alt="MaxManager — الوضع المتقدّم"></a><br><sub><b>الوضع المتقدّم</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/61-settings-service.png"><img src="docs/screenshots/61-settings-service.png" width="140" alt="MaxManager — الخدمة والسجلّ"></a><br><sub><b>الخدمة والسجلّ</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/62-language.png"><img src="docs/screenshots/62-language.png" width="140" alt="MaxManager — اللغة"></a><br><sub><b>اللغة</b></sub></td>
+    <td align="center" width="25%"></td>
+    <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
 </table>
@@ -241,7 +268,7 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 </details>
 
 <details>
-<summary><b>الشبكة والتخزين و HUD</b> · ٦ إطارات</summary>
+<summary><b>الشبكة والتخزين و HUD</b> · ٧ إطارات</summary>
 
 <table>
   <tr>
@@ -252,7 +279,27 @@ MaxManager مبنيّ بالاتجاه المعاكس.
   </tr>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/47-fps-overlay-metrics.png"><img src="docs/screenshots/47-fps-overlay-metrics.png" width="140" alt="MaxManager — مقاييس HUD"></a><br><sub><b>مقاييس HUD</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/48-fps-overlay-source.png"><img src="docs/screenshots/48-fps-overlay-source.png" width="140" alt="MaxManager — مصدر HUD"></a><br><sub><b>مصدر HUD</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/63-compiler-mode.png"><img src="docs/screenshots/63-compiler-mode.png" width="140" alt="MaxManager — وضع التجميع"></a><br><sub><b>وضع التجميع</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/64-compiler-apps.png"><img src="docs/screenshots/64-compiler-apps.png" width="140" alt="MaxManager — تجميع التطبيقات"></a><br><sub><b>تجميع التطبيقات</b></sub></td>
+    <td align="center" width="25%"></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>الجهاز والأدوات</b> · ٥ إطارات</summary>
+
+<table>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/65-device-info.png"><img src="docs/screenshots/65-device-info.png" width="140" alt="MaxManager — معلومات الجهاز"></a><br><sub><b>معلومات الجهاز</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/66-access-privileges.png"><img src="docs/screenshots/66-access-privileges.png" width="140" alt="MaxManager — الصلاحيات"></a><br><sub><b>الصلاحيات</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/67-file-manager.png"><img src="docs/screenshots/67-file-manager.png" width="140" alt="MaxManager — مدير الملفات"></a><br><sub><b>مدير الملفات</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/68-task-monitor.png"><img src="docs/screenshots/68-task-monitor.png" width="140" alt="MaxManager — مراقب المهام"></a><br><sub><b>مراقب المهام</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/69-audio-studio.png"><img src="docs/screenshots/69-audio-studio.png" width="140" alt="MaxManager — استوديو الصوت"></a><br><sub><b>استوديو الصوت</b></sub></td>
+    <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
@@ -260,17 +307,17 @@ MaxManager مبنيّ بالاتجاه المعاكس.
 
 </details>
 
-> **الملتقط ٤٨ من ٤٨ إطارًا** · والخيارات الإضافيّة ٠. والإطار غير الملتقط يغيب من الشبكة أعلاه ولا يظهر مكسورًا؛ و<a href="docs/screenshots/">مجلّد اللقطات</a> يحملها كلّها.
+> **الملتقط ٦٧ من ٧٢ إطارًا** · والخيارات الإضافيّة ٠. والإطار غير الملتقط يغيب من الشبكة أعلاه ولا يظهر مكسورًا؛ و<a href="docs/screenshots/README.md">عقد الالتقاط</a> يذكرها كلّها.
 <!-- screenshots:end -->
 
 وكل إطار هنا **لقطة حقيقية من جهاز**، مأخوذة بحسب العقد في
-**[`docs/screenshots/`](docs/screenshots/)**: صور PNG بدقة 1162×2480، ودون 400 كيلوبايت
+**[`docs/screenshots/`](docs/screenshots/README.md)**: صور PNG بدقة 1162×2480، ودون 400 كيلوبايت
 للإطار، وخيار شريط حالة واحد عبر كل الإطارات، وسمة داكنة في اللقطات كلها، مع نسخ `-light` و`-ar`. والشبكة
 **مولَّدة من الإطارات الموجودة** — `tools/screenshot_gallery.py` لا تكتب `<img>` إلا لملفّ PNG موجود
 فعلًا، فالإطار الذي لم يُلتقط **غائب لا مكسور**، والإطار المُسقَط باسمه الصحيح يظهر في أول تشغيل
 للمولّد.
 
-والرسوم في هذه الصفحة — مسار الكتابة، ودورة Max Atlas، وحلقة Max AI، والمجالات التسعة — مرسومة من
+والرسوم في هذه الصفحة — مسار الكتابة، ودورة Max Atlas، وحلقة Max AI، والمجالات العشرة — مرسومة من
 سلوك التطبيق ونصوصه ورمزه لا من لقطات، وكل ادّعاء عن شاشة هنا مكتوب من كلمات الواجهة نفسها.
 
 والواجهة مرسومة بقواعد لا بذوق، وهذه القواعد مكتوبة قيمةً قيمة في **[DESIGN.md](DESIGN.md)** —
@@ -387,9 +434,9 @@ Max AI يراقب سلوك الجهاز فعليًّا — السرعة والح
 
 ## <img src="docs/assets/ic-sliders.svg?v=2" width="22" height="22" align="absmiddle" alt="الضوابط"> ما تتحكم فيه
 
-<p align="center"><img src="docs/assets/domains.svg?v=2" width="100%" alt="تسعة مجالات ضبط: المعالج، وبطاقة الرسوم، والذاكرة، والعرض، والاستجابة، والحرارة، والطاقة، والتخزين والمترجم، والشبكة"></p>
+<p align="center"><img src="docs/assets/domains.svg?v=3" width="100%" alt="عشرة مجالات ضبط: المعالج، وبطاقة الرسوم، والذاكرة، والعرض، والاستجابة، والحرارة، والطاقة، والتخزين والمترجم، والشبكة، والصوت"></p>
 
-تسعة مجالات، لكل منها واجهته الخاصة. والسطر تحت كل اسم هو **وصف التطبيق نفسه** للمجال كما في
+عشرة مجالات، لكل منها واجهته الخاصة. والسطر تحت كل اسم هو **وصف التطبيق نفسه** للمجال كما في
 الواجهة حرفيًّا.
 
 - <img src="docs/assets/ic-cpu.svg?v=2" width="20" height="20" align="absmiddle" alt="المعالج"> **المعالج (CPU)** — *الأنوية والحكّام وتسريع المزوّد وتفضيلات النواة.* تشغيل الأنوية أو إيقافها،
@@ -413,6 +460,10 @@ Max AI يراقب سلوك الجهاز فعليًّا — السرعة والح
   المجمَّعة، وصحة التخزين.
 - <img src="docs/assets/ic-network.svg?v=2" width="20" height="20" align="absmiddle" alt="الشبكة"> **الشبكة** — *جدولة الحركة وحالة الربط.* خوارزمية احتقان TCP، والفتح السريع/SACK/ECN، وملفات SYN،
   وإعادة استخدام المقابس، ومعاملات مجدول الإدخال/الإخراج، وحالة الربط.
+- <img src="docs/assets/ic-audio.svg?v=2" width="20" height="20" align="absmiddle" alt="الصوت"> **الصوت** — *أجهزة الإخراج والدفقات والمؤثرات المُعلَنة.* اقرأ ما تُعلنه المنصّة للمخرج الأساسيّ —
+  معدّل العيّنة ودورة المخزن — وكلّ طرف يعلنه الجهاز (المخارج أولًا ثم المداخل)، والمؤثرات التي يبلّغ
+  بها محرّك الصوت. **قراءة فقط بقرار**، وصادقة عن الصمت: جهاز لا يُعلن مؤثرات يقول ذلك، ولا يُعرض له
+  مفتاح فارغ.
 
 وأي شيء لا تكشفه جهازك في هذه المجالات **لا يُذكر أصلًا**.
 
@@ -504,13 +555,12 @@ Max AI يراقب سلوك الجهاز فعليًّا — السرعة والح
 MaxManager يأتي **وحدة بلا نظام** (systemless) — لا شيء في `/system` يُعدَّل دائمًا، والإلغاء يُعيد
 كل شيء.
 
-1. نزّل `MaxManager-v1.0-module.zip` من **[الإصدارات](https://github.com/nader295/Max-Manger/releases/latest)** وافلشه في **Magisk** أو **KernelSU** (أو مدير جذر متوافق).
+1. افلش `MaxManager-V2.zip` في **Magisk** أو **KernelSU** (أو مدير جذر متوافق).
 2. أعد التشغيل.
 3. افتح **MaxManager** وامشِ في **الإعداد** الذي يشرح ما يكشفه *جهازك*.
 
-والإصدار نفسه يحمل **`MaxManager-checksums.txt`** — بصمة للحزمة وبصمة لكل ما فيها — فتُتحقّق من
-التنزيل قبل تفليشه؛ والأمران في **[docs/releases/v1.0.md](docs/releases/v1.0.md)**. وإذا فشلت
-الوحدة في بلوغ إقلاع
+والنسخ تأتي من CI كمخرجات سير العمل: الوحدة القابلة للتفليش، وحزمة المطوّر، وملفات التحقّق — انظر
+**[docs/building.md](docs/building.md#releases)** لمحتوى كل قناة إصدار. وإذا فشلت الوحدة في بلوغ إقلاع
 مستقرّ مرّتين متتاليتين تُعطّل نفسها وتقول ذلك في وصفها.
 
 <p align="right"><sub><a href="#top">↑ أعلى الصفحة</a></sub></p>
@@ -521,10 +571,10 @@ MaxManager يأتي **وحدة بلا نظام** (systemless) — لا شيء ف
 
 ## <img src="docs/assets/ic-cube.svg?v=2" width="22" height="22" align="absmiddle" alt="مطوّرو الروم"> لمطوّري الروم
 
-<p align="center"><img src="docs/assets/integration.svg?v=2" width="100%" alt="ثلاثة مسارات للدمج — الوحدة بلا نظام، ودمج AOSP من android/aosp، وKernelSU Next — والأسماء الثلاثة التي يجب أن تتفق: مسار الثنائي وخدمة init ووسوم SELinux"></p>
+<p align="center"><img src="docs/assets/integration.svg?v=3" width="100%" alt="ثلاثة مسارات للدمج — الوحدة بلا نظام، ودمج AOSP من android/aosp، وKernelSU Next — والأسماء الثلاثة التي يجب أن تتفق: مسار الثنائي وخدمة init ووسوم SELinux"></p>
 
-عدّة الدمج **غير منشورة هنا** — المصدر مغلق. وتُسلَّم لمطوّري الروم **بطلب كتابي**: ملفّات Soong،
-وخدمة init، ونطاق sepolicy، وقائمة صلاحيات مُمتَزَجة، والوحدة نفسها مُحزَّمة لـKernelSU Next.
+عدّة الدمج موجودة في هذا المستودع تحت **`android/aosp/`** — ملفّات Soong، وخدمة init، ونطاق sepolicy،
+وقائمة صلاحيات مُمتَزَجة. و`android/kernelsu/` تحمل الوحدة نفسها مُحزَّمة لـKernelSU Next.
 
 **ما تحصل عليه:** تطبيق تحكّم مُمتَزَج، وخمسة ثنائيات أصلية (خدمة الجهاز، وملفات الشرائح، وحارس
 الحرارة، ومهيّئ أدوات، ومحمّل ألعاب)، ووحدة تُثبَّت وتُزال دون تعديل دائم في `/system`.
@@ -538,7 +588,7 @@ MaxManager يأتي **وحدة بلا نظام** (systemless) — لا شيء ف
 > [الدعم](#الدعم).
 
 ابدأ من هنا: **[docs/rom-integration.md](docs/rom-integration.md)** — ثلاثة مسارات للدمج، وقائمة التحقّق،
-وتعارضان وجداهما في العدّة وأُبلِّغ عنهما بدل تلميعهما.
+وتعارضات وجدناها في العدّة وأُبلِّغ عنها بدل تلميعها.
 
 <p align="right"><sub><a href="#top">↑ أعلى الصفحة</a></sub></p>
 
@@ -584,7 +634,7 @@ MaxManager يأتي **وحدة بلا نظام** (systemless) — لا شيء ف
 | [profiles.md](docs/profiles.md) | سلوكيات الشرائح والتنفيذيات الأصلية للوحدة |
 | [thermal.md](docs/thermal.md) | حارس الحرارة: دمج المناطق، والسياسة، والتوقّع، والتعلّم |
 | [architecture.md](docs/architecture.md) | كيف تلتفّق التطبيق والحراس وواجهات النواة |
-| [releases/v1.0.md](docs/releases/v1.0.md) | ملاحظات إصدار ‎v1.0‎، وكيف تتحقّق من التنزيل |
+| [building.md](docs/building.md) | البناء من المصدر، ومخرجات CI، والإصدارات، والأرقام خلف كل ادّعاء |
 | [verification.md](docs/verification.md) | كيف يُقاس كل ادّعاء هنا — وما لا يمكن قياسه |
 | [faq.md](docs/faq.md) | الأسئلة التي تتكرّر |
 | [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) | مكوّنات الطرف الثالث مع إشعاراتها |
@@ -680,7 +730,7 @@ MaxManager يأتي **وحدة بلا نظام** (systemless) — لا شيء ف
 
 <a id="credits"></a>
 
-## <img src="docs/assets/ic-credit.svg?v=2" width="22" height="22" align="absmiddle" alt="الفضل"> Credits
+## <img src="docs/assets/ic-credit.svg?v=2" width="22" height="22" align="absmiddle" alt="الفضل"> الفضل
 
 ‏MaxManager لم يُكتب وحده. هذه الأعمال نشكره عليها — وكلّ إشعار تفرضه رخصتها يبقى في
 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)، وهو القائمة الملزمة.
@@ -691,6 +741,7 @@ MaxManager يأتي **وحدة بلا نظام** (systemless) — لا شيء ف
 | [Encore Tweaks](https://github.com/Rem01Gaming/encore) | (C) 2024-2025 Rem01Gaming | Apache-2.0 |
 | [Rianixia-ThermalCore](https://github.com/ryanistr/Rianixia-ThermalCore) | (C) 2025-2026 ryanistr | Apache-2.0 |
 | [VMTouch](https://github.com/hoytech/vmtouch) | (c) 2009-2023 Doug Hoyte and contributors | BSD-3-Clause |
+| [COPG](https://github.com/AlirezaParsi/COPG) | AlirezaParsi | Apache-2.0 |
 
 <sub><b>اسمك غير موجود في القائمة؟</b> إن كان لك عمل يُستخدم هنا ولم يُذكر أعلاه، راسلني في
 الخاص — أو تجدني في [المجموعة](https://t.me/ROBINHOOD_GROUP_RODIN) — وسيُضاف.</sub>

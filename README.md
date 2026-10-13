@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nader295/Max-Manger/releases/latest"><img alt="Download" src="https://img.shields.io/badge/download-latest_release-2ea44f?style=for-the-badge"></a>
+  <a href="https://github.com/catui0041-alt/Gg/actions/workflows/build.yml"><img alt="Build" src="https://github.com/catui0041-alt/Gg/actions/workflows/build.yml/badge.svg?v=2"></a>
   <img alt="Android" src="https://img.shields.io/badge/Android-10%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white">
   <img alt="Root" src="https://img.shields.io/badge/root-required-607D8F?style=for-the-badge">
   <img alt="Languages" src="https://img.shields.io/badge/languages-84%2B-607D8F?style=for-the-badge">
@@ -28,15 +28,11 @@
   <a href="docs/README.md"><b>Read the docs</b></a>
 </p>
 
-<p align="center"><b>This repository is MaxManager's public face</b> — the documentation, the
-screenshots and the downloads. The application and its native layer are <b>private source</b>:
-nothing here builds, and the command lines quoted in these pages run inside that repository.</p>
-
 | | |
 | --- | --- |
 | **Platform** | Android 10 or newer (API 29) · `arm64-v8a` and `armeabi-v7a` |
 | **Root** | Magisk · KernelSU · KernelSU Next — or Shizuku for part of it |
-| **Screens** | 53 across nine control domains, plus a tools shelf |
+| **Screens** | 61 across ten control domains, plus a tools shelf |
 | **Languages** | 84 locales plus English, right-to-left enforced by a gate |
 | **Licence** | Proprietary — the copyright holder's written permission is required |
 
@@ -54,7 +50,7 @@ nothing here builds, and the command lines quoted in these pages run inside that
 | 3 | [Why it is built this way](#the-story) | The three layers and the one write path |
 | 4 | [Max Atlas](#max-atlas) | Why anything works on *your* phone |
 | 5 | [Max AI](#max-ai) | What changes, and how it is measured |
-| 6 | [What you can control](#what-you-can-control) | The nine domains, per-app control, profiles |
+| 6 | [What you can control](#what-you-can-control) | The ten domains, per-app control, profiles |
 | 7 | [Watching, measuring, diagnosing](#watching) | Live readings, overlays, logs, diagnostics |
 | 8 | [Languages](#languages) | 84 locales, and RTL as a gate |
 | 9 | [Requirements](#requirements) | Will it work on my phone? |
@@ -93,8 +89,8 @@ Two doors in, depending on who you are:
 
 | **I want to use it** | **I build ROMs** |
 | --- | --- |
-| [What it looks like](#what-it-looks-like) · [What you can control](#what-you-can-control) · [Install](#install) | [For ROM developers](#for-rom-developers) — the integration kit, on request |
-| 53 screens across nine control domains, plus a tools shelf | Soong files, an init service, a sepolicy domain, a privileged-permission allowlist |
+| [What it looks like](#what-it-looks-like) · [What you can control](#what-you-can-control) · [Install](#install) | [For ROM developers](#for-rom-developers) — the integration kit in `android/aosp/` |
+| 61 screens across ten control domains, plus a tools shelf | Soong files, an init service, a sepolicy domain, a privileged-permission allowlist |
 | [Requirements](#requirements): Android 10+, root (or Shizuku for part of it) | Permission-first: proprietary software, written permission required |
 
 <p align="right"><sub><a href="#top">↑ Back to top</a></sub></p>
@@ -108,7 +104,7 @@ Two doors in, depending on who you are:
 
 <!-- screenshots:start -->
 <details open>
-<summary><b>Home and Max AI</b> · 6 frames</summary>
+<summary><b>Home and Max AI</b> · 7 frames</summary>
 
 <table>
   <tr>
@@ -120,7 +116,7 @@ Two doors in, depending on who you are:
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/05-max-ai-live.png"><img src="docs/screenshots/05-max-ai-live.png" width="140" alt="MaxManager — Live control"></a><br><sub><b>Live control</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/06-max-ai-loops.png"><img src="docs/screenshots/06-max-ai-loops.png" width="140" alt="MaxManager — Loop results"></a><br><sub><b>Loop results</b></sub></td>
-    <td align="center" width="25%"></td>
+    <td align="center" width="25%"><a href="docs/screenshots/49-home-tour.png"><img src="docs/screenshots/49-home-tour.png" width="140" alt="MaxManager — Home tour"></a><br><sub><b>Home tour</b></sub></td>
     <td align="center" width="25%"></td>
   </tr>
 </table>
@@ -128,7 +124,7 @@ Two doors in, depending on who you are:
 </details>
 
 <details open>
-<summary><b>Per-app control</b> · 6 frames</summary>
+<summary><b>Per-app control</b> · 7 frames</summary>
 
 <table>
   <tr>
@@ -140,15 +136,28 @@ Two doors in, depending on who you are:
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/30-app-settings-power.png"><img src="docs/screenshots/30-app-settings-power.png" width="140" alt="MaxManager — Per-app power"></a><br><sub><b>Per-app power</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/31-app-settings-tune.png"><img src="docs/screenshots/31-app-settings-tune.png" width="140" alt="MaxManager — Per-app tuning"></a><br><sub><b>Per-app tuning</b></sub></td>
-    <td align="center" width="25%"></td>
+    <td align="center" width="25%"><a href="docs/screenshots/50-app-spoof.png"><img src="docs/screenshots/50-app-spoof.png" width="140" alt="MaxManager — Spoof"></a><br><sub><b>Spoof</b></sub></td>
     <td align="center" width="25%"></td>
   </tr>
 </table>
 
 </details>
 
+<details open>
+<summary><b>Game space</b> · 3 frames</summary>
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="docs/screenshots/70-game-lobby.png"><img src="docs/screenshots/70-game-lobby.png" width="260" alt="MaxManager — Game lobby"></a><br><sub><b>Game lobby</b></sub></td>
+    <td align="center" width="33%"><a href="docs/screenshots/71-game-launch.png"><img src="docs/screenshots/71-game-launch.png" width="260" alt="MaxManager — Launching"></a><br><sub><b>Launching</b></sub></td>
+    <td align="center" width="33%"><a href="docs/screenshots/72-game-panel.png"><img src="docs/screenshots/72-game-panel.png" width="260" alt="MaxManager — Side panel"></a><br><sub><b>Side panel</b></sub></td>
+  </tr>
+</table>
+
+</details>
+
 <details>
-<summary><b>Control hubs</b> · 8 frames</summary>
+<summary><b>Control hubs</b> · 10 frames</summary>
 
 <table>
   <tr>
@@ -161,14 +170,20 @@ Two doors in, depending on who you are:
     <td align="center" width="25%"><a href="docs/screenshots/11-control-hub-2.png"><img src="docs/screenshots/11-control-hub-2.png" width="140" alt="MaxManager — Control (2)"></a><br><sub><b>Control (2)</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/12-hub-display.png"><img src="docs/screenshots/12-hub-display.png" width="140" alt="MaxManager — Display"></a><br><sub><b>Display</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/13-hub-responsiveness.png"><img src="docs/screenshots/13-hub-responsiveness.png" width="140" alt="MaxManager — Responsiveness"></a><br><sub><b>Responsiveness</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/14-hub-power.png"><img src="docs/screenshots/14-hub-power.png" width="140" alt="MaxManager — Power"></a><br><sub><b>Power</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/51-cpu-hub.png"><img src="docs/screenshots/51-cpu-hub.png" width="140" alt="MaxManager — CPU hub"></a><br><sub><b>CPU hub</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/52-memory-hub.png"><img src="docs/screenshots/52-memory-hub.png" width="140" alt="MaxManager — Memory hub"></a><br><sub><b>Memory hub</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/53-storage-hub.png"><img src="docs/screenshots/53-storage-hub.png" width="140" alt="MaxManager — Storage hub"></a><br><sub><b>Storage hub</b></sub></td>
+    <td align="center" width="25%"></td>
+    <td align="center" width="25%"></td>
   </tr>
 </table>
 
 </details>
 
 <details>
-<summary><b>CPU and GPU</b> · 5 frames</summary>
+<summary><b>CPU and GPU</b> · 6 frames</summary>
 
 <table>
   <tr>
@@ -179,7 +194,7 @@ Two doors in, depending on who you are:
   </tr>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/19-gpu-studio-live.png"><img src="docs/screenshots/19-gpu-studio-live.png" width="140" alt="MaxManager — GPU live"></a><br><sub><b>GPU live</b></sub></td>
-    <td align="center" width="25%"></td>
+    <td align="center" width="25%"><a href="docs/screenshots/54-thermal.png"><img src="docs/screenshots/54-thermal.png" width="140" alt="MaxManager — Thermal"></a><br><sub><b>Thermal</b></sub></td>
     <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
@@ -188,12 +203,18 @@ Two doors in, depending on who you are:
 </details>
 
 <details>
-<summary><b>Memory and display</b> · 2 frames</summary>
+<summary><b>Memory and display</b> · 5 frames</summary>
 
 <table>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/20-memory-zram.png"><img src="docs/screenshots/20-memory-zram.png" width="140" alt="MaxManager — ZRAM"></a><br><sub><b>ZRAM</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/21-display-resolution.png"><img src="docs/screenshots/21-display-resolution.png" width="140" alt="MaxManager — Resolution"></a><br><sub><b>Resolution</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/55-memory-ufs.png"><img src="docs/screenshots/55-memory-ufs.png" width="140" alt="MaxManager — Memory & UFS"></a><br><sub><b>Memory & UFS</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/56-zram-custom.png"><img src="docs/screenshots/56-zram-custom.png" width="140" alt="MaxManager — ZRAM size"></a><br><sub><b>ZRAM size</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/57-canvas-custom.png"><img src="docs/screenshots/57-canvas-custom.png" width="140" alt="MaxManager — Custom canvas"></a><br><sub><b>Custom canvas</b></sub></td>
+    <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
@@ -216,7 +237,7 @@ Two doors in, depending on who you are:
 </details>
 
 <details>
-<summary><b>Settings and tools</b> · 11 frames</summary>
+<summary><b>Settings and tools</b> · 13 frames</summary>
 
 <table>
   <tr>
@@ -227,14 +248,20 @@ Two doors in, depending on who you are:
   </tr>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/36-backup-plan.png"><img src="docs/screenshots/36-backup-plan.png" width="140" alt="MaxManager — Backup plan"></a><br><sub><b>Backup plan</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/37-backup-apps.png"><img src="docs/screenshots/37-backup-apps.png" width="140" alt="MaxManager — Backup apps"></a><br><sub><b>Backup apps</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/38-permissions.png"><img src="docs/screenshots/38-permissions.png" width="140" alt="MaxManager — Permissions"></a><br><sub><b>Permissions</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/39-permissions-app.png"><img src="docs/screenshots/39-permissions-app.png" width="140" alt="MaxManager — App permissions"></a><br><sub><b>App permissions</b></sub></td>
-  </tr>
-  <tr>
-    <td align="center" width="25%"><a href="docs/screenshots/40-permissions-2.png"><img src="docs/screenshots/40-permissions-2.png" width="140" alt="MaxManager — Permissions (2)"></a><br><sub><b>Permissions (2)</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/41-activity-launcher.png"><img src="docs/screenshots/41-activity-launcher.png" width="140" alt="MaxManager — Activities"></a><br><sub><b>Activities</b></sub></td>
     <td align="center" width="25%"><a href="docs/screenshots/42-set-edit.png"><img src="docs/screenshots/42-set-edit.png" width="140" alt="MaxManager — Property editor"></a><br><sub><b>Property editor</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/58-backup-scope.png"><img src="docs/screenshots/58-backup-scope.png" width="140" alt="MaxManager — What it copies"></a><br><sub><b>What it copies</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/59-settings-about.png"><img src="docs/screenshots/59-settings-about.png" width="140" alt="MaxManager — About"></a><br><sub><b>About</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/60-settings-advanced.png"><img src="docs/screenshots/60-settings-advanced.png" width="140" alt="MaxManager — Advanced"></a><br><sub><b>Advanced</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/61-settings-service.png"><img src="docs/screenshots/61-settings-service.png" width="140" alt="MaxManager — Service & logs"></a><br><sub><b>Service & logs</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/62-language.png"><img src="docs/screenshots/62-language.png" width="140" alt="MaxManager — Language"></a><br><sub><b>Language</b></sub></td>
+    <td align="center" width="25%"></td>
+    <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
 </table>
@@ -242,7 +269,7 @@ Two doors in, depending on who you are:
 </details>
 
 <details>
-<summary><b>Network, storage and HUD</b> · 6 frames</summary>
+<summary><b>Network, storage and HUD</b> · 7 frames</summary>
 
 <table>
   <tr>
@@ -253,7 +280,27 @@ Two doors in, depending on who you are:
   </tr>
   <tr>
     <td align="center" width="25%"><a href="docs/screenshots/47-fps-overlay-metrics.png"><img src="docs/screenshots/47-fps-overlay-metrics.png" width="140" alt="MaxManager — HUD metrics"></a><br><sub><b>HUD metrics</b></sub></td>
-    <td align="center" width="25%"><a href="docs/screenshots/48-fps-overlay-source.png"><img src="docs/screenshots/48-fps-overlay-source.png" width="140" alt="MaxManager — HUD source"></a><br><sub><b>HUD source</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/63-compiler-mode.png"><img src="docs/screenshots/63-compiler-mode.png" width="140" alt="MaxManager — Compiler mode"></a><br><sub><b>Compiler mode</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/64-compiler-apps.png"><img src="docs/screenshots/64-compiler-apps.png" width="140" alt="MaxManager — Compile per app"></a><br><sub><b>Compile per app</b></sub></td>
+    <td align="center" width="25%"></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>Device and tools</b> · 5 frames</summary>
+
+<table>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/65-device-info.png"><img src="docs/screenshots/65-device-info.png" width="140" alt="MaxManager — Device info"></a><br><sub><b>Device info</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/66-access-privileges.png"><img src="docs/screenshots/66-access-privileges.png" width="140" alt="MaxManager — Privileges"></a><br><sub><b>Privileges</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/67-file-manager.png"><img src="docs/screenshots/67-file-manager.png" width="140" alt="MaxManager — File manager"></a><br><sub><b>File manager</b></sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/68-task-monitor.png"><img src="docs/screenshots/68-task-monitor.png" width="140" alt="MaxManager — Task monitor"></a><br><sub><b>Task monitor</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><a href="docs/screenshots/69-audio-studio.png"><img src="docs/screenshots/69-audio-studio.png" width="140" alt="MaxManager — Audio studio"></a><br><sub><b>Audio studio</b></sub></td>
+    <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
     <td align="center" width="25%"></td>
   </tr>
@@ -261,17 +308,17 @@ Two doors in, depending on who you are:
 
 </details>
 
-> **48 of 48 frames captured** · 0 optional extras. A frame not captured yet is absent from the grid above rather than broken; the <a href="docs/screenshots/">screenshots folder</a> holds all of them.
+> **67 of 72 frames captured** · 0 optional extras. A frame not captured yet is absent from the grid above rather than broken; the <a href="docs/screenshots/README.md">capture contract</a> lists all of them.
 <!-- screenshots:end -->
 
 Every frame here is a **real capture from a device**, taken to the contract in
-[`docs/screenshots/`](docs/screenshots/): 1162×2480 PNG, under 400 KiB each, one status-bar
+[`docs/screenshots/`](docs/screenshots/README.md): 1162×2480 PNG, under 400 KiB each, one status-bar
 choice across all frames, dark theme throughout, with `-light` and `-ar` variants. The grid is
 **generated from the frames that exist** — `tools/screenshot_gallery.py` emits an `<img>` only for a PNG
 that is really there, so a frame that has not been captured is **absent rather than broken**, and a frame
 dropped in under the contract's name appears the next time the generator runs.
 
-The diagrams on this page — the write path, the Max Atlas cycle, the Max AI loop, the nine domains —
+The diagrams on this page — the write path, the Max Atlas cycle, the Max AI loop, the ten domains —
 are drawn from the app's own behaviour, strings and tokens rather than from screenshots, and every
 claim about a screen here is written from the interface's own words.
 
@@ -398,9 +445,9 @@ Full page: **[docs/max-ai.md](docs/max-ai.md)**.
 
 ## <img src="docs/assets/ic-sliders.svg?v=2" width="22" height="22" align="absmiddle" alt="Controls"> What you can control
 
-<p align="center"><img src="docs/assets/domains.svg?v=2" width="100%" alt="Nine control domains: CPU, GPU, memory, display, responsiveness, thermal, power, storage and compiler, network"></p>
+<p align="center"><img src="docs/assets/domains.svg?v=3" width="100%" alt="Ten control domains: CPU, GPU, memory, display, responsiveness, thermal, power, storage and compiler, network, audio"></p>
 
-Nine areas, each in its own hub. The line under each name is the app's **own** one-line description of
+Ten areas, each in its own hub. The line under each name is the app's **own** one-line description of
 the area, quoted from the interface.
 
 - <img src="docs/assets/ic-cpu.svg?v=2" width="20" height="20" align="absmiddle" alt="CPU"> **CPU** — *Cores, governor, vendor boost and kernel preferences.* Turn individual cores on or off,
@@ -424,6 +471,10 @@ the area, quoted from the interface.
   filter, reset compiled state, storage health.
 - <img src="docs/assets/ic-network.svg?v=2" width="20" height="20" align="absmiddle" alt="Network"> **Network** — *Traffic scheduling and link state.* TCP congestion algorithm, fast-open/SACK/ECN, SYN
   cookies, socket reuse, I/O scheduler tunables, link state.
+- <img src="docs/assets/ic-audio.svg?v=2" width="20" height="20" align="absmiddle" alt="Audio"> **Audio** — *Output devices, streams and declared effects.* Read what the platform declares for the
+  primary output — sample rate and frames per buffer — every endpoint the device announces (outputs
+  first, then inputs), and the effects the audio engine reports. Read-only by design, and honest about
+  silence: a device that declares no effects says so instead of showing an empty switch.
 
 Anything your device does not expose in one of these areas simply is not listed.
 
@@ -522,13 +573,12 @@ device. Details: **[docs/compatibility.md](docs/compatibility.md)**.
 MaxManager ships as a **systemless module** — nothing in `/system` is modified permanently, and
 uninstalling puts everything back.
 
-1. Download `MaxManager-v1.0-module.zip` from **[Releases](https://github.com/nader295/Max-Manger/releases/latest)** and flash it in **Magisk** or **KernelSU** (or a compatible root manager).
+1. Flash `MaxManager-V2.zip` in **Magisk** or **KernelSU** (or a compatible root manager).
 2. Reboot.
 3. Open **MaxManager** and walk through **Setup**, which explains what *your* device exposes.
 
-The same release carries **`MaxManager-checksums.txt`** — one digest for the package and one for
-each of its contents — so you can verify the download before flashing it; the two commands are in
-**[docs/releases/v1.0.md](docs/releases/v1.0.md)**. If the
+Builds come from CI as workflow artifacts: the flashable module, a developer bundle, and checksums —
+see **[docs/building.md](docs/building.md#releases)** for what each release channel contains. If the
 module fails to reach a stable boot twice in a row, it disables itself and says so in its own
 description.
 
@@ -540,11 +590,11 @@ description.
 
 ## <img src="docs/assets/ic-cube.svg?v=2" width="22" height="22" align="absmiddle" alt="ROM developers"> For ROM developers
 
-<p align="center"><img src="docs/assets/integration.svg?v=2" width="100%" alt="Three integration paths — systemless module, AOSP integration from android/aosp, KernelSU Next — and the three names that must agree: the binary path, the init service and the SELinux labels"></p>
+<p align="center"><img src="docs/assets/integration.svg?v=3" width="100%" alt="Three integration paths — systemless module, AOSP integration from android/aosp, KernelSU Next — and the three names that must agree: the binary path, the init service and the SELinux labels"></p>
 
-The integration kit is **not published here** — the source is private. It is released to ROM
-maintainers **on written request**: Soong build files, an init service, a sepolicy domain and a
-privileged-permission allowlist, plus the same module packaged for KernelSU Next.
+The integration kit ships in this repository under **`android/aosp/`** — Soong build files, an init
+service, a sepolicy domain and a privileged-permission allowlist. `android/kernelsu/` holds the same
+module packaged for KernelSU Next.
 
 **What you get:** a privileged control app, five native binaries (the device service, chipset profiles,
 the thermal daemon, a utility configurator and a game preloader), and a module that installs and
@@ -559,7 +609,7 @@ exactly — the binary path, the init service and the SELinux label — and the 
 > grants no right otherwise. Ask first via [Support](#support).
 
 Start here: **[docs/rom-integration.md](docs/rom-integration.md)** — three integration paths, the
-checklist, and two mismatches we found in the kit and reported rather than papered over.
+checklist, and the mismatches we found in the kit, reported rather than papered over.
 
 <p align="right"><sub><a href="#top">↑ Back to top</a></sub></p>
 
@@ -605,7 +655,7 @@ This page is the tour. The answers you reach for afterwards live in **[`docs/`](
 | [profiles.md](docs/profiles.md) | Chipset strategies and the module's native executables |
 | [thermal.md](docs/thermal.md) | The thermal daemon: zone fusion, policy, prediction, learning |
 | [architecture.md](docs/architecture.md) | How the app, the daemons and the kernel interfaces fit together |
-| [releases/v1.0.md](docs/releases/v1.0.md) | The v1.0 release notes, and how to verify the download |
+| [building.md](docs/building.md) | Building from source, CI artifacts, releases, and the numbers behind every claim |
 | [verification.md](docs/verification.md) | How every claim here is measured — and what cannot be measured |
 | [faq.md](docs/faq.md) | The questions that keep coming back |
 | [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) | The third-party components, with their notices |
@@ -716,6 +766,7 @@ require stays in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md), which remai
 | [Encore Tweaks](https://github.com/Rem01Gaming/encore) | (C) 2024-2025 Rem01Gaming | Apache-2.0 |
 | [Rianixia-ThermalCore](https://github.com/ryanistr/Rianixia-ThermalCore) | (C) 2025-2026 ryanistr | Apache-2.0 |
 | [VMTouch](https://github.com/hoytech/vmtouch) | (c) 2009-2023 Doug Hoyte and contributors | BSD-3-Clause |
+| [COPG](https://github.com/AlirezaParsi/COPG) | AlirezaParsi | Apache-2.0 |
 
 <sub><b>Missing from this list?</b> If a work of yours ends up used here and is not named above,
 message me privately — or find me in the [group](https://t.me/ROBINHOOD_GROUP_RODIN) — and I will add it.</sub>

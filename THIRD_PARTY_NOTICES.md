@@ -5,7 +5,7 @@
 
 **ووظيفته واحدة: أن يقول ما أضفناه.** فلا يُثقل بذكر **منهجٍ** أُلهمنا منه ولا مشروعٍ **لم يُنقل منه
 كود**، ولا بسرد تاريخ التنقية وأدلّة الأدوات — فسجلّ الإزالة وإعادة التأليف والدلائل المقيسة في
-`docs/PROVENANCE.md` وفي `docs/ai/HANDOFF.md`، وهما موضع الإثبات.
+[`docs/PROVENANCE.md`](docs/PROVENANCE.md) وفي `docs/ai/HANDOFF.md`، وهما موضع الإثبات.
 
 والقائمة **مقيسة لا مكتوبة من الذاكرة**: مصدرها `python3 tools/license_audit.py --json` الذي يقرأ
 ترويسة كلّ ملفّ متعقَّب، وترويسة ELF لكلّ ثنائية، وتتبّعات Gradle (٤٢) وصناديق Cargo (١٠٨). ومن قرأ
@@ -22,8 +22,10 @@
 | **AZenith** `github.com/Liliya2727/AZenith` | صاحب ترويسة `Copyright (C) 2026-2027 Zexshia` التي تحملها **٢٤٧ ملفًا** في `manager/` و`archdaemon/` (ومجموعة `archdaemon/` يصنّفها التدقيق بـ«Encore Daemon (via AZenith)») | Apache-2.0 | Copyright (C) 2025-2026 Zexshia |
 | **Encore Tweaks** `github.com/Rem01Gaming/encore` | أساس خدمة `archdaemon/` (٤٠ ملفًا في الوحدة؛ منها ١٤ ملفّ C ومعه `mainfiles/verify.sh` و`AppMonitor.kt` **تحمل ترويسته صراحةً**) | Apache-2.0 | Copyright (C) 2024-2025 Rem01Gaming |
 | **Rianixia-ThermalCore** `github.com/ryanistr/Rianixia-ThermalCore` | محرّك الإدارة الحرارية `thermalcore/` (١٦ ملفّ Rust؛ منها ٣ تُسمّي أصله: `main.rs` · `monitor.rs` · `android_ffi.rs`) | Apache-2.0 | Copyright (C) 2025-2026 ryanistr |
-| **Android Open Source Project** `source.android.com/license` | بنية مساحة المستخدم وسياسة SELinux؛ أدوات الإقلاع/الصور (`binutils/` · `android/aosp/`) | Apache-2.0 | Copyright (C) The Android Open Source Project |
+| **Android Open Source Project** `source.android.com/license` | بنية مساحة المستخدم وسياسة SELinux؛ أدوات الإقلاع/الصور (`binutils/` · `android/aosp/`)؛ **رؤوس عقد مؤثّرات الصوت** مُجزَّأة حرفيًّا في `maxfx/include/maxfx_effect_abi.h` من `hardware/libhardware/include/hardware/audio_effect.h` و`system/media/audio/include/system/audio_effect{,-base}.h` (نقلٌ من ترخيص متسامح بنسبة الفضل — ADR-55) | Apache-2.0 | Copyright (C) The Android Open Source Project |
 | **VMTouch** `github.com/hoytech/vmtouch` | **كود مُضمَّن ومُعدَّل**: `preloadbin/jni/main.c` هو vmtouch 1.4.1 (**٩٩٫٧٪ مطابقة — فارق ٣ أسطر**) يُبنى منه `sys.maxmanager-preloadbin` | BSD-3-Clause | Copyright (c) 2009-2023 Doug Hoyte and contributors |
+
+فكرة تنظيم السجلّ — تدوير متعدّد الأجيال، وسجلّ التفصيل خلف `debugmode` — مأخوذة من AZenith (commit `95df79b`، Apache-2.0)، ولا شيفرة منقولة منه؛ التنفيذ في `SystemLogger.c` و`FileHandler.c` من تأليفنا.
 
 ## 2. الإشعارات المحفوظة في ملفّاتها — ولا تُنسخ هنا
 
@@ -47,13 +49,6 @@
   والاعتماد عليه في نطاق الاختبار فقط. القائمة بأسمائها في `build/license-report.json`.
 - **صناديق Cargo (١٠٨)** — التوزيع المقيس: `MIT OR Apache-2.0` (١٠٣) · `Apache-2.0` (٤) · `Zlib` (١).
 
-## 4. كيف يُتحقّق من هذه القائمة — بأمر، لا بوصف
+- **COPG (مفردات الوسوم)** — `CopgTag.kt` يعيد صياغة **مفردات** وسوم الحزم الموصوفة في README المستودع (Apache-2.0)؛ **لا شيفرة منقولة**. الإسناد: AlirezaParsi/COPG (README الإصدار 6.8.0 وREADME أقدم منه، قُرئا 2026-10-04).
 
-```sh
-python3 tools/license_audit.py --assert       # لا GPL في مسار الإصدار، ولا أصل مُخفى بترويسة ملكية
-python3 tools/license_audit.py --self-test    # يقيس الأداة نفسها
-```
-
-وتُشغَّلان في CI ضمن خطوة «Contract gates» **قبل** البناء الثقيل، فتنكشف عودة أيّ مكوّن GPL في ثوانٍ.
-ونتائج التدقيق الحيّة — بالأرقام والحالات — في `docs/PROVENANCE.md`،
-و`docs/AUTHENTICITY.md` لقياس استقلال النصّ عن الأصل المرجعي.
+- **COPG (بيانات كتالوج الأجهزة)** — `app/src/main/assets/spoof/device_catalog.json` مستخرَج من `module/COPG.json` (كتل `PACKAGES_*_DEVICE` فقط) في AlirezaParsi/COPG، فرع `JSON` عند `e1d7da6c24cb571c5d123a6f7c85fafbb42b870b` (قُرئ 2026-10-04)، **Apache-2.0**. **عُدِّل**: أُعيد ترميز المفاتيح وحُذفت قوائم الحزم والوسوم. نصّ الترخيص مرفق: `assets/spoof/device_catalog.LICENSE.txt`. شُحنت البيانات كما هي (لا بصمة اختُلقت).
