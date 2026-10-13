@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="ic-audio-t ic-audio-d">
+  <title id="ic-audio-t">Audio</title>
+  <desc id="ic-audio-d">A speaker with two waves: output devices and declared effects.</desc>
+  <rect x="0" y="0" width="24" height="24" rx="6.5" fill="#0E1418" stroke="#2E4150" stroke-width="1"/>
+  <path d="M5.2 9.6h3.4l4.6-4.2v13.2l-4.6-4.2H5.2z" fill="none" stroke="#5FD9AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15.6 9.8Q17.2 12 15.6 14.2" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 7.6Q19.8 12 18 16.4" fill="none" stroke="#9BBACB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
