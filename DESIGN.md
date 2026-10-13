@@ -1,5 +1,5 @@
 > **Context.** The gate commands quoted in this document run inside the **private repository**
-> that holds the app; this page is the language itself, published so the interface can be read and
+> that holds the app; this page is the language itself published so the interface can be read and
 > judged.
 
 ---
